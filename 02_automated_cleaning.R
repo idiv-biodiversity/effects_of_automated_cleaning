@@ -12,7 +12,7 @@ dat <- data.frame()
 
 for(i in 1:length(li)){
   print(i)
-  sub <- read_delim(paste("input/gbif/", li[i], "/occurrence.txt", sep = ""), delim = "\t") %>% 
+  sub <- read_delim(paste("input/gbif/", li[i], "/occurrence.txt", sep = ""), delim = "\t", quote = "") %>% 
     mutate_all(as.character)
   if(nrow(sub) > 0){
     sub$taxon <- str_split(li[i], pattern = "_")[[1]][1]

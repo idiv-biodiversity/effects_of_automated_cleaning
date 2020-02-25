@@ -1,4 +1,5 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
@@ -6,19 +7,18 @@
 ]{article}
 \usepackage{lmodern}
 \usepackage{setspace}
-\setstretch{1.3}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \IfFileExists{microtype.sty}{% use microtype if available
   \usepackage[]{microtype}
@@ -38,13 +38,18 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Automated filtering of species occurrence data can identify problems, but needs to be customized},
-  pdfauthor={Alexander Zizka1,2,; Fernanda Antunes Carvalho4,5,; Alice Calvente4,5,; Ana Paula Alves da Silva4,5,; Andressa Cabral,; Arthur de Souza Soares4,5,; Eduardo Calisto Tomaz4,; Fernanda Gondim Lambert Moreira4,5,; Filipe Serrano,; Jéssica Fernanda Ramos Coelho,; Mabel Rocio Baez-Lizarazo,; Mariana Ramos Fantinati4,5,; Matheus Colli-Silva,; Moabe Ferreira Fernandes,; Nathália Michelly da Cunha Santos,; Paolla G. C. Souza,; Renata Clícia Santos da Costa,; Thais Ferreira Pinto de Araújo,; Tiago Andrade Borges Santos,; Tiago Luiz Vieira,; Valéria Fonseca Vale,; Alexandre Antonelli6},
-  pdfborder={0 0 0},
-  breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+  pdftitle={No one-size-fits-all solution to clean GBIF},
+  pdfauthor={Alexander Zizka1,2,; Fernanda Antunes Carvalho4,; Alice Calvente4,; Ana Paula Alves da Silva4,; Andressa Cabral5,; Arthur de Souza Soares4,; Eduardo Calisto Tomaz4,; Fernanda Gondim Lambert Moreira4,; Filipe Cabreirinha Serrano6,; Jéssica Fernanda Ramos Coelho4,; Mabel Rocio Baez-Lizarazo,7; Mariana Ramos Fantinati4,; Matheus Colli-Silva5,; Moabe Ferreira Fernandes8,; Nathália Michelly da Cunha Santos4,; Paolla Gabryelle Cavalcante de Souza4,; Renata Clicia dos Santos‐Costa4,; Thais Ferreira-Araújo4,; Tiago Andrade Borges Santos9,; Tiago Luiz Vieira9,; Valéria Fonseca Vale4,; Alexandre Antonelli10,11,12},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1in]{geometry}
 \usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
@@ -57,25 +62,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-2}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-  \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-  \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{caption}
 \usepackage{fancyhdr}
 \usepackage{booktabs}
@@ -102,32 +96,41 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 
-\title{Automated filtering of species occurrence data can identify problems, but needs to be customized}
-\author{Alexander Zizka\textsuperscript{1,2}, \and Fernanda Antunes Carvalho\textsuperscript{4,5}, \and Alice Calvente\textsuperscript{4,5}, \and Ana Paula Alves da Silva\textsuperscript{4,5}, \and Andressa Cabral, \and Arthur de Souza Soares\textsuperscript{4,5}, \and Eduardo Calisto Tomaz\textsuperscript{4}, \and Fernanda Gondim Lambert Moreira\textsuperscript{4,5}, \and Filipe Serrano, \and Jéssica Fernanda Ramos Coelho, \and Mabel Rocio Baez-Lizarazo, \and Mariana Ramos Fantinati\textsuperscript{4,5}, \and Matheus Colli-Silva, \and Moabe Ferreira Fernandes, \and Nathália Michelly da Cunha Santos, \and Paolla G. C. Souza, \and Renata Clícia Santos da Costa, \and Thais Ferreira Pinto de Araújo, \and Tiago Andrade Borges Santos, \and Tiago Luiz Vieira, \and Valéria Fonseca Vale, \and Alexandre Antonelli\textsuperscript{6}}
+\title{No one-size-fits-all solution to clean GBIF}
+\author{Alexander Zizka\textsuperscript{1,2}, \and Fernanda Antunes Carvalho\textsuperscript{4}, \and Alice Calvente\textsuperscript{4}, \and Ana Paula Alves da Silva\textsuperscript{4}, \and Andressa Cabral\textsuperscript{5}, \and Arthur de Souza Soares\textsuperscript{4}, \and Eduardo Calisto Tomaz\textsuperscript{4}, \and Fernanda Gondim Lambert Moreira\textsuperscript{4}, \and Filipe Cabreirinha Serrano\textsuperscript{6}, \and Jéssica Fernanda Ramos Coelho\textsuperscript{4}, \and Mabel Rocio Baez-Lizarazo,\textsuperscript{7} \and Mariana Ramos Fantinati\textsuperscript{4}, \and Matheus Colli-Silva\textsuperscript{5}, \and Moabe Ferreira Fernandes\textsuperscript{8}, \and Nathália Michelly da Cunha Santos\textsuperscript{4}, \and Paolla Gabryelle Cavalcante de Souza\textsuperscript{4}, \and Renata Clicia dos Santos‐Costa\textsuperscript{4}, \and Thais Ferreira-Araújo\textsuperscript{4}, \and Tiago Andrade Borges Santos\textsuperscript{9}, \and Tiago Luiz Vieira\textsuperscript{9}, \and Valéria Fonseca Vale\textsuperscript{4}, \and Alexandre Antonelli\textsuperscript{10,11,12}}
 \date{}
 
 \begin{document}
 \maketitle
 
+\setstretch{1.3}
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  sDiv,German Center for Integrative Biodiversity Research (iDiv), Leipzig, Germany
+  sDiv, German Center for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, Leipzig, Germany
 \item
   Naturalis Biodiversity Center, Leiden, The Netherlands
 \item
-  Departamento de Genética, Ecologia e Evolução, Instituto de Ciências Biológicas, Universidade Federal de Minas Gerais, Av. Antônio Carlos 6627 - Pampulha, 31270-901 - Belo Horizonte - MG - Brasil
+  Departamento de Genética, Ecologia e Evolução, Universidade Federal de Minas Gerais, Belo Horizonte, Brazil
 \item
-  Laboratório de Botânica Sistemática, Departamento de Botânica e Zoologia, Centro de Biociências, Universidade Federal do Rio Grande do Norte.
+  Departamento de Botânica e Zoologia, Universidade Federal do Rio Grande do Norte, Natal, Brazil
 \item
-  Programa de pós graduação em Sistemática e Evolução, Universidade Federal do Rio Grande do Norte, Natal, Brasil
+  Departamento de Botânica, Universidade de São Paulo, São Paulo, Brazil
 \item
-  Gothenburg Global Biodiversity Centre, University of Gothenburg, Box 461, 405 30 Gothenburg, Sweden
+  Departamento de Ecologia, Universidade de São Paulo, São Paulo, Brazil
 \item
-  Department for Biological and Environmental Sciences, University of Gothenburg, Box 461, 405 30 Gothenburg, Sweden
+  Universidade Federal do Rio Grande do Sul, Porto Alegre, Brazil
 \item
-  Royal Botanic Gardens Kew, TW9 3AE, Richmond, Surrey, United Kingdom
+  Departamento de Ciências Biológicas, Universidade Estadual de Feira de Santana, Feira de Santana, Brazil
+\item
+  Universidade Estadual de Feira de Santana, Bahia, Brazil
+\item
+  Gothenburg Global Biodiversity Centre, University of Gothenburg, Gothenburg, Sweden
+\item
+  Department for Biological and Environmental Sciences, University of Gothenburg, Gothenburg, Sweden
+\item
+  Royal Botanic Gardens Kew, Richmond, United Kingdom
 \end{enumerate}
 
 \newpage{}
@@ -135,117 +138,117 @@
 \hypertarget{abstract}{%
 \section{Abstract}\label{abstract}}
 
-Automatic flagging and subsequent filtering are a scalable and reproducible means to identify potentially problematic records in `big data' datasets of species geographic occurrences from public databases (e.g., www.gbif.org). However, it is unclear how much data is lost by filtering is, if similar test should be applied across taxonomic groups, and what is the effect of filtering for downstream analyses. Here, we obtained occurrence records for 16 taxa including plants and animals (terrestrial and marine groups) from www.gbif.org and documented the effect of 13 recently proposed filters in each group. We evaluated the effect of filtering on the inference of species richness patterns and the accuracy of automated conservation assessments as examples for downstream analyses. We found 29-67\% of the records potentially problematic across taxonomic groups. The tests for duplicated information, collection year, basis of record as well as urban areas and political centroids were most important. While many of the flagged records might not be erroneous per se, they might be overly imprecise, increase uncertainty of downstream analyses and generate unnecessary computational burden. Overall, our results stress the importance of (meta-)data exploration for biogeographic research and suggest that automated flagging can help to identify problematic records, but also highlight the necessity to customize tests and thresholds to the taxonomic group and geographic area of interest.
+Species occurrence records provide the basis for many biodiversity studies. They derive from geo-referenced specimens deposited in natural history collections and visual observations, such as those obtained through various mobile applications. Given the rapid increase in availability of such data, the control of quality and accuracy constitutes a particular concern. Automatic flagging and filtering are a scalable and reproducible means to identify potentially problematic records in datasets from public databases such as the Global Biodiversity Information Facility (GBIF; www.gbif.org). However, it is unclear how much data may be lost by filtering, whether the same tests should be applied across all taxonomic groups, and what is the effect of filtering for common downstream analyses. Here, we evaluate the effect of 13 recently proposed filters on the inference of species richness patterns and automated conservation assessments for 16 Neotropical taxa including plants and animals, terrestrial and marine, downloaded from GBIF. We find that 29-67\% of the records are potentially erroneous, with large variation across taxonomic groups. Tests for duplicated information, collection year, basis of record as well as urban areas and political centroids have the greatest effect. While many flagged records might not be \emph{de facto} erroneous, they could be overly imprecise and increase uncertainty in downstream analyses. Automated flagging can help in identifying problematic records, but requires customization of which tests and thresholds should be applied to the taxonomic group and geographic area under focus. Our results stress the importance of thorough exploration of the meta-data associated with species records for biodiversity research.
 
 \hypertarget{keywords}{%
 \section{Keywords}\label{keywords}}
 
-Automated cleaning, automated conservation assessment, data quality, GBIF, Neotropics
+Automated cleaning, automated conservation assessment, data quality, GBIF, Neotropics.
 
 \newpage{}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Publicly available species distribution data have become a crucial resource in biogeographic research. In particular, the availability of digitized collections from museums and herbaria, and citizen science observations has increased in the last years. As of today, the largest public aggregator for geo-referenced species occurrences data, the Global Biodiversity Information Facility (www.gbif.org), provides access to more than 1.3 billion geo-referenced occurrence records for species from across the globe and the tree of life.
+Publicly available species distribution data have become a crucial resource in biodiversity research, including studies in ecology, biogeography, systematics and conservation biology. In particular, the availability of digitized collections from museums and herbaria, and citizen science observations has increased drastically over the last few years. As of today, the largest public aggregator for geo-referenced species occurrences data, the Global Biodiversity Information Facility (www.gbif.org), provides access to more than 1.3 billion geo-referenced occurrence records for species from across the globe and the tree of life.
 
-A central challenge to the use of these publicly available species occurrence data in research are erroneous geographic coordinates (Anderson et al., 2016). Errors mostly arise, because public databases integrate records collected with different methodology in different places at different times, often with little centralized curation and meta-data. For instance, erroneous coordinates caused by data-entry errors or automated geo-referencing from vague locality descriptions are common (Maldonado et al., 2015; Yesson et al., 2007) and cause recurrent problems such as records of terrestrial species in the sea, records with coordinates assigned to the centroids of political entities, or records from species in captivity (Zizka, Silvestro, et al., 2019).
+A central challenge to the use of these publicly available species occurrence data in research are erroneous geographic coordinates (Anderson et al., 2016). Errors mostly arise because public databases integrate records collected with different methodologies in different places, at different times; often without centralized curation and only rudimentary meta-data. For instance, erroneous coordinates caused by data-entry errors or automated geo-referencing from vague locality descriptions are common (Maldonado et al., 2015; Yesson et al., 2007) and cause recurrent problems such as records of terrestrial species in the sea, records with coordinates assigned to the centroids of political entities, or records of species in captivity (Zizka, Silvestro, et al., 2019).
 
-Manual data cleaning based on expert knowledge can detect these issues, but is only feasible on small taxonomic or geographic scales and is time-consuming and difficult to reproduce. Automated flagging methods to identify potentially problematic records have been proposed as a scalable alternative for datasets with millions of records from many different taxa. Those methods are usually based on geographic gazetteers (e.g., Chamberlain, 2016; Jin \& Yang, 2020; Zizka, Silvestro, et al., 2019) or on additional data, such as environmental variables (Robertson, Visser, \& Hui, 2016). Additionally, filtering procedures based on record meta-data, such as collection year, record type, and coordinate precisions have been proposed to improve the quality of publicly available occurrence records for biogeographic research (Zizka, Silvestro, et al., 2019). While these methods can identify common errors, it is unclear if errors are equally common across taxonomic groups, and which errors are most severe for downstream analyses.
+Manual data cleaning based on expert knowledge can detect these issues, but it is only feasible on small taxonomic or geographic scales, and it is time-consuming and difficult to reproduce. As an alternative, automated flagging methods to identify potentially problematic records have been proposed as a scalable option, as they are able to deal with datasets containing up to millions of records and many different taxa. Those methods are usually based on geographic gazetteers (e.g., Chamberlain, 2016; Jin \& Yang, 2020; Zizka, Silvestro, et al., 2019) or on additional data, such as environmental variables (Robertson, Visser, \& Hui, 2016). Additionally, filtering procedures based on record meta-data, such as collection year, record type, and coordinate precisions have been proposed to improve the quality of publicly available occurrence records for biodiveristy research (Zizka, Silvestro, et al., 2019).
 
-Erroneous records are especially problematic in conservation, where stakes are high. Recently, automated conservation assessment methods have been developed to use publicly available occurrence records for conservation, in particular to support the assessment procedures for the global Red List of the International Union for the Conservation of Nature (IUCN) (Bachman et al., 2011; Dauby et al., 2017; Pelletier et al., 2018). These methods approximate species' range size, namely the Extent of Occurrence (EOO, which is the area of a convex hull polygon comprising all records of a species), the Area of Occupancy (AOO, which is the sum of the area actually occupied by a species, calculated based on a small-scale regular grid), and the number of locations for a preliminary conservation assessment following IUCN Criterion B. Automated assessments using these methods have been used to speed up global (Stévart et al., 2019; Zizka, Azevedo, et al., 2019) and regional (Cosiaux et al., 2018; Schmidt et al., 2017) Red List assessments. Since especially EOO is sensitive to individual records with erroneous coordinates automated conservation assessments might be prone to bias by erroneous records, especially, if the number of records is low, as is the case for many species from the tropical regions on Earth.
+Erroneous records are especially problematic in conservation, where stakes are high. Recently proposed methods for automated conservation assessments could support the formal assessment procedures for the global Red List of the International Union for the Conservation of Nature (IUCN) (Bachman et al., 2011; Dauby et al., 2017; Pelletier et al., 2018). These methods approximate species' range size, namely the Extent of Occurrence (EOO, which is the area of a convex hull polygon comprising all records of a species), the Area of Occupancy (AOO, which is the sum of the area actually occupied by a species, calculated based on a small-scale regular grid), and the number of locations for a preliminary conservation assessment following IUCN Criterion B (``Geographic range''). These methods have been used topropose preliminary global (Stévart et al., 2019; Zizka, Azevedo, et al., 2019) and regional (Cosiaux et al., 2018; Schmidt et al., 2017) Red List assessments. However, all metrics but especially EOO, are sensitive to individual records with erroneous coordinates \textbf{(REFERENCE)}. Automated conservation assessments may therefore be biased, particularly if the number of records are few, as it is the case for many tropical species.
 
-Here, we test the effect of automated filtering of species geographic occurrence records on the number of records available in different plant and animal groups. Furthermore, we test the impact of automated filtering procedures on the accuracy of automated conservation assessments compared to full IUCN assessments. Specifically, we evaluate a pipeline of 13 automated filters to flag possibly erroneous records 1) using record meta-data and 2) using geographic gazetteers. We address thee questions:
+While newly proposed methods for automated cleaning of species records hold great promise for biodiversity research, their use across taxonomic groups and datasets remains poorly explored. Here, we test the effect of automated filtering of species geographic occurrence records on the number of records available in different groups of animals, funghi, and plants. Furthermore, we test the impact of automated filtering procedures for the accuracy of automated conservation assessments compared to full IUCN assessments. Specifically, we evaluate a pipeline of 13 automated filters to flag possibly erroneous records by using 1) record meta-data and 2) geographic gazetteers. We address three questions:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Which is the most relevant filter, i.e.~which type of error is most common?
+  Which filters lead to the biggest loss of data when applied?
 \item
   Does the importance of individual filters differ among taxonomic groups?
 \item
-  Does automated filtering improve the accuracy of automated conservation assessment compared to the global IUCN Red List?
+  Does automated filtering improve the accuracy of automated conservation assessments?
 \end{enumerate}
 
 \hypertarget{material-and-methods}{%
 \section{Material and Methods}\label{material-and-methods}}
 
-We did all analysis in the R computing environment (R Core Team, 2019), using standard libraries for data handling and visualization (Garnier, 2018; Hijmans, 2019; Ooms, 2014, 2019; Wickham, 2018). All analysis scripts are available from \url{https://github.com/idiv-biodiversity/effects_of_automated_cleaning}, or from the Appendix 1 in the electronic supplement of this study.
-
 \hypertarget{choice-of-study-taxa}{%
 \subsection{Choice of study taxa}\label{choice-of-study-taxa}}
 
-This study is the outcome of a workshop held at the Federal University of Rio Grande do Norte in Natal, Brazil in October 2018 gathering taxonomists and biogeographers working with different taxonomic groups of plants and animals across the Neotropics. Each participant analysed geographic occurrence data from their taxonomic group of interest and provided an assessment of the results for this group. Hence, we chose the study groups based on the expertise of the participants which enabled us to compare the results across the tree of life (at the cost of an arbitrary choice of taxa and taxonomic ranks). We obtained public occurrence records for 16 taxa, including one plant family, eight plant genera, one genus of fungi, two families and one genus of terrestrial arthropods, one family of snakes, one family of skates and one genus of fish (Table 1).
+This study is the outcome of a workshop held at the Federal University of Rio Grande do Norte in Natal, Brazil in October 2018 gathering graduate students, taxonomists and biogeographers working with different taxonomic groups of animals, funghi, and plants across the Neotropics. Each participant analysed geographic occurrence data from their taxonomic group of interest and provided an informed assessment of the results for their group. Hence, we include groups based on the expertise of the participants wrather than following some arbitrary choice of taxa and taxonomic ranks. We acknowledge a varying degree in documented expertise and number of years working on each group. We obtained public occurrence records for 16 taxa, including one plant family, eight plant genera, one genus of fungi, two families and one genus of terrestrial arthropods, one family of snakes, one family of skates, and one genus of bony fish (Table 1).
 
 \hypertarget{species-occurrence-data}{%
 \subsection{Species occurrence data}\label{species-occurrence-data}}
 
-We downloaded occurrence information for all study groups from www.gbif.org using the \texttt{rgbif} v1.4.0 package (Chamberlain, 2017) in R (GBIF.org, 2019a, 2019b, 2019c, 2019d, 2019e, 2019f, 2019g, 2019h, 2019i, 2019j, 2019k, 2019l, 2019m, 2019n, 2019o, 2019p). We chose www.gbif.org for this study, since it is the largest and most widely used provider of species occurrence data and covers the entire tree of life. We downloaded only records with geographic coordinates, and limited the study area to latitudes smaller than 33\(^\circ\) N and longitudes smaller than 35\(^\circ\) W and larger than 120\(^\circ\) W reflecting the Neotropics, our area of expertise (Morrone, 2014).All included taxa are restricted within the Neotropics (natural populations) except Arhynchobatidae, Iridaceae and Neanuridae for which only the Neotropical occurrence was explored.
+We downloaded occurrence information for all study groups from www.gbif.org using the \texttt{rgbif} v1.4.0 package (Chamberlain, 2017) in R (GBIF.org, 2019a-p). We downloaded only records with geographic coordinates and limited the study area to latitudes smaller than 33\(^\circ\) N and longitudes smaller than 35\(^\circ\) W and larger than 120\(^\circ\) W reflecting the Neotropics, our main area of expertise (Morrone, 2014). The natural distribution of all included taxa are confined to the Neotropics except Arhynchobatidae, Diogenidae, Dipsadidae, \emph{Gaylussacia}, Iridaceae, Neanuridae, and \emph{Tillandsia} for which we only obtained the Neotropical occurrences.
 
 \hypertarget{automated-cleaning}{%
 \subsection{Automated cleaning}\label{automated-cleaning}}
 
-We followed the cleaning pipeline outlined by Zizka, Silvestro, et al. (2019) and first filtered the raw data downloaded from GBIF (``raw'', hereafter) using meta-data for those records for which it was available, removing: 1) records with a coordinate precision below 100 km (as this represent the grain size of many macro-ecological analyses); 2) fossil records and records of unknown source; 3) records collected before 1945 (before the end of the Second World War, since coordinates of old records are often imprecise and often reflect different land-use types); and 4) records with less than 1 and more than 99 individual records. Furthermore, we rounded the geographic coordinates to four decimal precision and retained only one record per species per location (i.e.~test for duplicated records. In a second step, we used the \texttt{clean\_coordinates} function of the \texttt{CoordinateCleaner\ v2.0-11} package (Zizka, Silvestro, et al., 2019) with default options to flag errors that are common to biological collections, including: sea coordinates, zero coordinates, coordinates assigned to country and province centroids, coordinates within urban areas, and coordinates assigned to biodiversity institutions (``filtered'', hereafter). See Table 2 for a summary of all flagging tests we used.
+We followed the cleaning pipeline outlined by Zizka, Silvestro, et al. (2019) and first filtered the raw data downloaded from GBIF (``raw'', hereafter) using meta-data for those records for which they were available, removing: 1) records with a coordinate precision below 100 km (as this represent the grain size of many macro-ecological analyses); 2) fossil records and records of unknown source; 3) records collected before 1945 (before the end of the Second World War, since coordinates of old records are often imprecise); and 4) records with an individual count of less than one and more than 99. Furthermore, we rounded the geographic coordinates to four decimal precision and retained only one record per species per location (i.e.~test for duplicated records). In a second step, we used the \texttt{clean\_coordinates} function of the \texttt{CoordinateCleaner\ v2.0-11} package (Zizka, Silvestro, et al., 2019) with default options to flag errors that are common to biological data sets (``filtered'', hereafter). These including: coordinates in the sea for terrestrial taxa, coordinates containing only zeros, coordinates assigned to country and province centroids, coordinates within urban areas, and coordinates assigned to biodiversity institutions. See Table 2 for a summary of all flagging tests we used.
 
 \hypertarget{downstream-analyses}{%
 \subsection{Downstream analyses}\label{downstream-analyses}}
 
-We first generated species richness maps using 100x100 km grid cells for the raw and filtered dataset respectively, using the \texttt{speciesgeocodeR\ v2.0-10} package (Töpel et al., 2016) and then performed a preliminary conservation assessment for all study groups based on both datasets using the \texttt{ConR\ v1.2.4} package (Dauby et al., 2017). \texttt{ConR} estimates the EOO, AOO, and the number of locations, and then suggests a preliminary conservation status based on Criterion B of the global IUCN Red List. While these assessments are preliminary (see IUCN Standards and Petitions Subcommittee, 2017), they can be a proxy used by the IUCN to speed up full assessments. We then benchmarked the preliminary conservation assessments with the global IUCN Red List assessments, which we obtained from www.iucn.org via the \texttt{rredlist\ v.0.5.0} package (Chamberlain, 2018).
+We first generated species richness maps using 100x100 km grid cells for the raw and filtered datasets respectively, using the package \texttt{speciesgeocodeR\ v2.0-10} (Töpel et al., 2016). We then performed an automated conservation assessment for all study groups based on both datasets using the \texttt{ConR\ v1.2.4} package (Dauby et al., 2017). \texttt{ConR} estimates the EOO, AOO, and the number of locations, and then suggests a preliminary conservation status based on Criterion B of the global IUCN Red List. While these assessments are preliminary (see IUCN Standards and Petitions Subcommittee, 2017), they can be a proxy used by the IUCN to speed up full assessments. We then benchmarked the preliminary conservation assessments against the global IUCN Red List assessments as far as available for the same taxa, which we obtained from www.iucn.org via the \texttt{rredlist\ v.0.5.0} package (Chamberlain, 2018).
 
-\hypertarget{evaluation-of-the-results}{%
-\subsection{Evaluation of the results}\label{evaluation-of-the-results}}
+\hypertarget{evaluation-of-results}{%
+\subsection{Evaluation of results}\label{evaluation-of-results}}
 
-Each specialist evaluated the performance of the raw and cleaned datasets, respectively concerning: 1) the number of flagged records; 2) the importance of specific tests; 3) the accuracy of the overall species richness maps; 4) the accuracy of the preliminary conservation assessment.
+Each specialist provided an informed assessment on the performance of the raw and cleaned datasets, respectively concerning: 1) the number of flagged records; 2) the importance of specific tests; 3) the accuracy of the overall species richness maps; 4) the accuracy of the preliminary conservation assessments.
+
+We did all analyses in the R computing environment (R Core Team, 2019), using standard libraries for data handling and visualization (Garnier, 2018; Hijmans, 2019; Ooms, 2014, 2019; Wickham, 2018). All scripts are available from \url{https://github.com/idiv-biodiversity/effects_of_automated_cleaning}, or from the Appendix 1 in the electronic supplement of this study.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
-We found a total of 215,262 occurrence records, with a median of 3,460 records per study group and 11 records per species (Table 3, Appendix 2). We found most records for Dipsadidae (64,249) and fewest for \emph{Thozetella} (51). The species with most records was \emph{Harengula jaguana} (19,878).
+We retrieved a total of 215,262 species occurrence records, with a median of 3,460 records per study group and 11 records per species (Table 3, Appendix 2). We obtained most records for Dipsadidae (64,249) and fewest for \emph{Thozetella} (51). The species with most records was \emph{Harengula jaguana} (19,878).
 
-Our automated tests flagged a total of 88,648 records (Fig. \ref{fig:total}), with a median of 40.3\% per group. Overall, the most important test was for duplicated records (on average 32.9\% per taxonomic group). The most important filtering steps based on record meta-data were for the basis of records (2.1\%) and the collection year (3.3\%). The most important automated tests were for urban area (5\%), the capital coordinates (1.1\%) and the centroids of political units (0.5\%, Table 3, see Supplementary material 1 for the absolute numbers). Only few records were flagged by the zero coordinates and biodiversity institutions tests (Fig. \ref{fig:split}), and no records were flagged by the sea test.
+Our automated tests flagged a total of 88,648 records (Fig. \ref{fig:total}), with a median of 40.3\% per group. Overall, the most important test was for duplicated records (on average 32.9\% per taxonomic group). The filtering steps based on record meta-data that flagged the largest number of records were the basis of records (2.1\%) and the collection year (3.3\%). The most important automated tests were for urban area (5\%), the capital coordinates (1.1\%) and the centroids of political units (0.5\%, see Table 3 and Supplementary material 1 for further details and the absolute numbers). Only few records were flagged by the zero coordinates and biodiversity institution tests (Fig. \ref{fig:split}), and no records were flagged by the sea test.
 
-\emph{Prosthechea}, \emph{Harengula}, and \emph{Thozetella} had the highest fraction of flagged records (Table 3). In general, the different filters we tested were of similar importance for different study groups. There were few outstanding exceptions, including the particularly high proportions of records flagged by the basis of record test for \emph{Tityus} (7.0\%), Dipsadidae (5.6\%), \emph{Prosthechea} (5.0\%) and \emph{Tillandsia} (4.9\%), by the collection year for Dipsadidae (11.3\%), by the taxonomic identification level for \emph{Tityus} (1.6\%), by the capital coordinates for \emph{Oocephalus} (6.1\%) and \emph{Gaylussacia} (3.2\%), as well as by the urban areas test for \emph{Oocephalus} (13.3\%) and Iridaceae (12.3\%).
+\emph{Prosthechea}, \emph{Harengula}, and \emph{Thozetella} had the highest fraction of flagged records (Table 3). In general, the different filters we tested were of similar importance for different study groups. There were few outstanding exceptions, including the particularly high proportions of records flagged on the ``basis of record test'' for \emph{Tityus} (7.0\%), Dipsadidae (5.6\%), \emph{Prosthechea} (5.0\%) and \emph{Tillandsia} (4.9\%), by the collection year for Dipsadidae (11.3\%), by the taxonomic identification level for \emph{Tityus} (1.6\%), by the capital coordinates for \emph{Oocephalus} (6.1\%) and \emph{Gaylussacia} (3.2\%), and by the urban areas test for \emph{Oocephalus} (13.3\%) and Iridaceae (12.3\%).
 
-Geographically, the records flagged by the basis of record and individuals collected tests were concentrated in Central America and southern North America, and a relatively high number of records flagged due to their proximity to the centroids of political entities were located on Caribbean islands (Fig. \ref{fig:split}). See Supplementary material 2 for species richness maps using the raw and cleaned data for all study groups.
+Geographically, the records flagged by the ``basis of record'' and ``individual count'' tests were concentrated in Central America and southern North America, and a relatively high number of records flagged due to their proximity to the centroids of political entities were located on Caribbean islands (Fig. \ref{fig:split}). See Supplementary material 2 for species richness maps using the raw and cleaned data for all study groups.
 
-We found IUCN assessments for 575 species that were also included in our distribution data from 10 of our study groups (Table 4, Appendix 3). The fraction of species evaluated varied among the study group, with a maximum of 100\% for \emph{Harengula} and \emph{Lepismium} and a minimum of 2.3\% for Iridaceae (note that the number of species varied considerably among the groups). The median percentage of species per study group with an IUCN assessment was 32.45\%. A total of 101 species were listed as Threatened by the IUCN global Red List (CR = 19, EN = 40, VU = 42) and 474 as Not Threatened.
+We found IUCN assessments for 575 species that were also included in our distribution data from 10 of our study groups (Table 4, Appendix 3). The fraction of species evaluated varied among the study group, with a maximum of 100\% for \emph{Harengula} and \emph{Lepismium} and a minimum of 2.3\% for Iridaceae (note that the number of species varied considerably among groups). The median percentage of species per study group with an IUCN assessment was 32.45\%. A total of 101 species were listed as Threatened by the IUCN global Red List (CR = 19, EN = 40, VU = 42) and 474 as Not Threatened.
 
-We obtained automated conservation assessments for 2,092 species in the filtered dataset. Based on the filtered data the automated conservation assessment evaluated 1,299 species as possibly threatened (62.1\%, CR = 464, EN = 543, VU = 292). The automated assessment based on the filtered dataset agreed with the IUCN assessment for identifying species as possibly threatened (CR, EN, VU) for 356 species (64\%; Table 4). Filtering reduced the EOO by -16.1\% and the AOO by -9.3\% on median per group. For the raw dataset the agreement with IUCN was higher at 378 species (65.6\%).
+We obtained automated conservation assessments for 2,092 species in the filtered dataset. Based on the filtered data, the automated conservation assessment evaluated 1,299 species as possibly threatened (62.1\%, CR = 464, EN = 543, VU = 292). The automated assessment based on the filtered dataset agreed with the IUCN assessment for identifying species as possibly threatened (CR, EN, VU) for 356 species (64\%; Table 4). Filtering reduced the EOO by -16.1\% and the AOO by -9.3\% on median per group. For the raw dataset the agreement with IUCN was higher at 378 species (65.6\%).
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
-We found, that automated flagging based on meta-data and automatic tests flagged on average 40.3\% of the records per taxonomic group. The filters for basis of record, duplicates, collection year, and urban areas flagged the highest fraction of records (question 1). The importance of different tests was similar among taxonomic groups, with few exceptions especially for the tests on basis of record, collection year, capital coordinates, and urban areas (question 2). The results for species richness were similar between the raw and filtered data with some improvements by the filters and we found little impact of filtering on the accuracy of the automated conservation assessments (question 3).
+Automated flagging based on meta-data and automatic tests flagged on average 40.3\% of the records per taxonomic group. The filters for basis of record, duplicates, collection year, and urban areas flagged the highest fraction of records (Question 1). The importance of different tests was similar across taxonomic groups, with few exceptions especially for the tests on basis of record, collection year, capital coordinates, and urban areas (Question 2). The results for species richness were similar between the raw and filtered data with some improvements by the filters. We found little impact of filtering on the accuracy of the automated conservation assessments (Question 3).
 
-Several reasons may explain the high proportion of records flagged as duplicates. First, the deposition of duplicates from the same specimen hosted at different collections is common practice, especially for plants, where a duplication is easily feasible. Second, independent collections at similar localities may occur, in particular for local endemics, and third low coordinate precision, for instance based on automated geo-referencing from locality descriptions, may lump records from nearby localities. Of course, duplicated records do not represent errors per se, but they represent an unnecessary computational burden, which is often a bottleneck for analyses of datasets with millions of records.
+Several reasons may explain the high proportion of records flagged as duplicates. First, the deposition of duplicates from the same specimen hosted at different collections is common practice, especially for plants, where a specimen duplication is easily feasible. Second, independent collections at similar localities may occur, in particular for local endemics. Third, low coordinate precision, for instance based on automated geo-referencing from locality descriptions, may lump records from nearby localities. Duplicated records do not represent errors per se, but an unnecessary computational burden, which is often a bottleneck for analyses of datasets with millions of records.
 
-The aim of automated filtering is to identify possibly problematic records that are unsuitable for particular downstream analyses. Hence our tests include errors in the narrow sense (e.g., zero coordinates, equal lat/lon and seas tests) as well as records that are not necessary erroneous, but have a low precision (e.g., collection year, coordinate precision, centroids of political units) or are unnecessary (duplicates). The importance of each test and the linked thresholds must be judged based on the downstream analyses. For instance, records assigned to country centroids might be acceptable for inter-continental comparisons, but can be considered erroneous for species distribution modelling on a local scale. As our results show, adapting automated tests to the geographic study area or the taxonomic study group can be warranted. For instance, the high number of records flagged for centroids on the Lesser Antilles (Fig. \ref{fig:split}) might be overly strict, although we chose a conservative distance for the Political centroid test (1 km).
+The aim of automated filtering is to identify possibly problematic records that are unsuitable for particular downstream analyses. Hence, our tests may identify true errors (e.g., wrong coordinates such as those with exclusively zeros, equal latitude and longitude and records of terestrial species in the sea) as well as records that are not necessarily erroneous, but have a low precision (e.g., collection year, coordinate precision, centroids of political units) or are redundant for certain analyses (duplicates). The importance of each test and the linked thresholds must be judged based on the specific downstream analyses. For instance, records assigned to country centroids might be acceptable for inter-continental comparisons, but can be considered erroneous for species distribution modelling on a local scale. As our results show, adapting automated tests to the geographic study area or the taxonomic study group can be warranted. For instance, the high number of records flagged for centroids on the Lesser Antilles (Fig. \ref{fig:split}) might be overly strict, although we chose a conservative distance for the Political centroid test (1 km).
 
-The number of records flagged by individual tests was similar across the study groups, suggesting that similar error types might be relevant for collections of plants and animals and partly also terrestrial and marine organisms. Therefore, the same tests can be used across taxonomic groups. Some notable exceptions stress the need to adapt each test to the taxonomic study group to balance data quality and data availability. The high fraction of records flagged by the basis of record test for \emph{Tityus}, Dipsadidae, \emph{Prosthechea} and \emph{Tillandsia}, were mostly caused by a high number of records in these groups based on unknown collection methods (See Appendix 4 for f the individual groups), which might be caused by the contribution of specific datasets lacking this information for these groups. The high fraction of records flagged by the collection year test for Dispadidae was caused by a high collection activity already in the late 1880s and early 1900s, as can be expected for a charismatic group of reptiles, but also by 500 records dated to the year 1700. The latter records likely represent a data entry error. They are all contributed to GBIF from the same institution, and the institutions code for unavailable collection dates is 1700-01-01 - 2014-01-01, which has likely erroneously been converted to 1700. This emphasizes the importance to better train researchers and students to manage biodiversity databases. The high number of species flagged at capital coordinates and within urban areas for the plant groups Iridaceae, \emph{Oocephalus}, and \emph{Gaylussacia}, might be related to horticulture since at least some species of this group are commonly cultivated as ornamentals.
+The number of records flagged by individual tests was similar across study groups, suggesting that similar error types might be relevant for collections of plants and animals. Therefore, the same tests can be used across taxonomic groups. Some notable exceptions stress the need to adapt each test to the taxonomic study group to balance data quality and data availability. The high fraction of records flagged by the ``basis of record test'' for \emph{Tityus}, Dipsadidae, \emph{Prosthechea} and \emph{Tillandsia}, were mostly caused by a high number of records in these groups based on unknown collection methods (See Appendix 4 for the individual groups), which might be caused by the contribution of specific datasets lacking this information for these groups. The high fraction of records flagged by the collection year test for Dispadidae was caused by a high collection effort already in the late 1880s and early 1900s, as can be expected for a charismatic group of reptiles, but also by 500 records dated to the year 1700. The latter records likely represent a data entry error: they are all contributed to GBIF from the same institution, and the institutions code for unavailable collection dates is 1700-01-01 - 2014-01-01, which has likely erroneously been converted to 1700. The high number of species flagged at capital coordinates and within urban areas for the plant groups Iridaceae, and \emph{Oocephalus} might be related to horticulture since at least some species in those groups are commonly cultivated as ornamentals.
 
-The general agreement between the species richness maps based on raw and filtered data was encouraging, for the use of this data for large-scale biogeographic research (Fig. \ref{fig:speciesrichness}, Supplementary material 1). The filter based on political centroids had an important impact on species richness patterns, which is congruent with the results from previous studied (Maldonado et al., 2015). Records assigned to country or province centroids are often old records, which are geo-referenced based on vague locality descriptions. These records are at the same time more likely to represent dubious species names, since they might be old synonyms or type specimen of species that have only been collected and described once, which are erroneously increasing species numbers.
+The general agreement between the species richness maps based on raw and filtered data was encouraging, for the use of this data for large-scale biogeographic research (Fig. \ref{fig:speciesrichness}, Supplementary material 1). The filter based on political centroids had an important impact on species richness patterns, which is congruent with the results from a previous study in the coffee family (Maldonado et al., 2015). Records assigned to country or province centroids are often old records, which are geo-referenced at a later point based on vague locality descriptions. These records are at the same time more likely to represent dubious species names, since they might be old synonyms or type specimens of species that have only been collected and described once, which are erroneously increasing species numbers.
 
-The accuracy of the automated conservation assessment was in the same range as found by previous studies (Nic Lughadha et al., 2019; Zizka, Azevedo, et al., 2019). The similar accuracy of the raw and filtered dataset for the automated conservation assessment was surprising, in particular given the EOO and AOO reduction observed in the filtered dataset (Table 4) and the impact of errors on spatial analyses observed in previous studies (Gueta \& Carmel, 2016). The robustness of the automated assessment was likely due to the fact that the EOO for most species was large, even after the considerable reduction caused by filtering. This might be caused by the structure of our comparison, which only included species that were evaluated by the IUCN Red List (and not considered as Data Deficient) and at the same time have occurrences recorded in GBIF, which biases the dataset towards species with larger ranges, since generally more data for them is available. The robustness of automated conservation assessments to data quality is encouraging, although these methods are only an approximation, especially for species with few collection records (Rivers et al., 2011).
+The accuracy of the automated conservation assessment was in the same range as found by previous studies (Nic Lughadha et al., 2019; Zizka, Azevedo, et al., 2019). The similar accuracy of the raw and filtered dataset for the automated conservation assessment was surprising, in particular given the EOO and AOO reduction observed in the filtered dataset (Table 4) and the impact of errors on spatial analyses observed in previous studies (Gueta \& Carmel, 2016). The robustness of the automated assessment was likely due to the fact that the EOO for most species was large, even after the considerable reduction caused by filtering. This might be caused by the structure of our comparison, which only included species that were evaluated by the IUCN Red List (and not considered as Data Deficient) and at the same time had occurrences recorded in GBIF. Those inclusion criteria are likely to have, biased the datasets towards species with large ranges, since generally more data for them are available. The robustness of automated conservation assessments to data quality is encouraging, although these methods are only an approximation, especially for species with few collection records (Rivers et al., 2011).
 
 \hypertarget{conclusions}{%
 \section{Conclusions}\label{conclusions}}
 
-Our results suggest that between 1/3rd and 2/3rds of the occurrence records obtained from public databases might be unsuitable for downstream biogeographic analyses, dependent on the taxonomic group. While the majority of these records might not be erroneous per se, they might be overly imprecise and thereby increase uncertainty of downstream results or put additional computational burden on the analyses.
+Our results suggest that between one to two thirds of the occurrence records obtained from public databases might be unsuitable for downstream biodiversity analyses. While the majority of these records might not be erroneous per se, they might be overly imprecise and thereby increase uncertainty of downstream results or add computational burden on big data analyses.
 
-Overall, our results stress the importance of (meta-)data exploration before analyses and suggest that automated flagging can help to identify problematic records, but also highlight the necessity to customize tests and thresholds to the specific taxonomic groups and geographic area of interest.
+Our results stress the importance of (meta-)data exploration prior to most biodiversity analyses. Automated flagging can help to identify problematic records, but also highlight the necessity to customize tests and thresholds to the specific taxonomic groups and geographic area of interest. The putative errors we encountered point to the importance to train researchers and students to curate species occurrence datasets and to allow users to provide feedback for particular records, thus contributing to overall accuracy and precision of public biodiversity databases.
 
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
 
-This study enrolled participants of the workshop ``Biodiversity data: from field to yield'' lead by Alexandre Antonelli and Alexander Zizka through the Programa de Pós Graduação em Sistemática e Evolução of the Universidade Federal do Rio Grande do Norte (UFRN) and promoted by the 6th Conference on Comparative Biology of Monocotyledons - Monocots VI. We thank the Pró-reitoria de Pesquisa and the Pró-reitoria de Pós-graduação of UFRN for the financial support (edital 02/2016 - internacionalização). AZ is thankful for funding by iDiv via the German Research Foundation (DFG FZT 118), specifically through sDiv, the Synthesis Centre of iDiv.
+This study enrolled participants of the workshop ``Biodiversity data: from field to yield'' led by Alexandre Antonelli and Alexander Zizka through the Programa de Pós Graduação em Sistemática e Evolução of the Universidade Federal do Rio Grande do Norte (UFRN) and promoted by the 6th Conference on Comparative Biology of Monocotyledons - Monocots VI. We thank the Pró-reitoria de Pesquisa and the Pró-reitoria de Pós-graduação of UFRN for financial support (edital 02/2016 - internacionalização). AZ is funded by iDiv via the German Research Foundation (DFG FZT 118), specifically through sDiv, the Synthesis Centre of iDiv. AA is supported by the Swedish Research Council, the Knut and Alice Wallenberg Foundation, the Swedish Foundation for Strategic Research and the Royal Botanic Gardens, Kew.
 
 \hypertarget{supplementary-material}{%
 \section{Supplementary material}\label{supplementary-material}}
 
 Appendix 1 - Analyses scripts
 
-Appendix 2 - Table S1, the absolute number of flagged records per taxonomic group and test
+Appendix 2 - Table S1, reporting the absolute number of flagged records per taxonomic group and test
 
 Appendix 3 - The full results of the conservation assessment
 
@@ -258,7 +261,7 @@ Appendix 4 - Taxon specific richness maps and comments.
 
 \begin{landscape}\begin{table}
 
-\caption{\label{tab:tabletaxa}The study groups and their taxonomy. This study includes three marine and 13 terrestrial taxa, 6 of them animals, one group of fungi and 9 plants, belonging to 16 different orders.}
+\caption{\label{tab:tabletaxa}The study groups and their taxonomy. This study includes three marine and 13 terrestrial taxa, six of them animals, one group of fungi and nine plants, belonging to 16 different orders.}
 \centering
 \fontsize{11}{13}\selectfont
 \begin{tabular}[t]{>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{2.5cm}ll}
@@ -269,9 +272,9 @@ Diogenidae & Family & Marine & Hermit crabs & Arthropoda & Decapoda & Diogenidae
 Neanuridae & Family & Terrestrial & Springtails & Arthropoda & Poduromorpha & Neanuridae\\
 Tityus & Genus & Terrestrial & Scorpions & Arthropoda & Scorpiones & Buthidae\\
 Arhynchobatidae & Family & Marine & Skates & Chordata & Rajiformes & Arhynchobatidae\\
-Dipsadidae & Family & Terrestrial & Snakes & Chordata & Squamata & Colubridae\\
+Dipsadidae & Family & Terrestrial & Snakes & Chordata & Squamata & Dipsadidae\\
 \addlinespace
-Harengula & Genus & Marine & Herings & Chordata & Clupeiformes & Clupeidae\\
+Harengula & Genus & Marine & Herrings & Chordata & Clupeiformes & Clupeidae\\
 \hline
 Thozetella & Genus & Terrestrial & Sac fungi & Ascomycota & Chaetosphaeriales & Chaetosphaeriaceae\\
 \hline
@@ -300,16 +303,16 @@ Tocoyena & Genus & Terrestrial & NA & Angiosperms & Gentianales & Rubiaceae\\
 \toprule
 Test & Type & Rationale\\
 \midrule
-\rowcolor{gray!6}  Basis of record & Meta-data & Records might be unsuitable or unreliable for certain analysis dependent on their source, e.g. "fossil" or "unknown"\\
-Collection year & Meta-data & Coordinates from old records are more likely to be imprecise or erroneous coordinates since they are derived from  geo-referencing based on the locality description. Since is more problematic for older records, since names or borders of places may change\\
-\rowcolor{gray!6}  Coordinate precision & Meta-data & Records may be unsuitable for a study if their precision is lower than the studies analysis scale\\
+\rowcolor{gray!6}  Basis of record & Meta-data & Records might be unsuitable or unreliable for certain analyses dependent on their source, e.g. "fossil" or "unknown"\\
+Collection year & Meta-data & Coordinates from old records are more likely to be imprecise or erroneous coordinates since they are derived from  geo-referencing based on the locality description. This is more problematic for older records, since names or borders of places may change\\
+\rowcolor{gray!6}  Coordinate precision & Meta-data & Records may be unsuitable for a study if their precision is lower than the study analysis scale\\
 Identification level & Meta-data & Records may be unsuitable if they are not identified to species level.\\
 \rowcolor{gray!6}  Individual count & Meta-data & Records may be unsuitable if the number of recorded individuals is 0 (record of absence) or if the count is to high, as this is often related to records from barcoding or indicative of data entry problems.\\
 \addlinespace
 Biodiversity institutions & Gazetteer-based & Records may have coordinates at the location of biodiversity institutions, e.g. because they were erroneously entered with the physical location of the specimen or because they represent individuals from captivity or horticulture\\
 \rowcolor{gray!6}  Duplicates & Gazetteer-based & Duplicated records may add unnecessary computational burden to analyses\\
 Equal lat/lon & Gazetteer-based & Coordinates with equal latitude and longitude are usually indicative of data entry errors\\
-\rowcolor{gray!6}  Capitals & Gazetteer-based & Records may be assigned to the coordinates of countries capitals based on a vague locality description\\
+\rowcolor{gray!6}  Capitals & Gazetteer-based & Records may be assigned to the coordinates of country capitals based on a vague locality description\\
 Political centroids & Gazetteer-based & Records may be assigned to the coordinates of the centroids of political entities based on a vague locality description\\
 \addlinespace
 \rowcolor{gray!6}  Sea & Gazetteer-based & Coordinates from terrestrial organisms in the sea are usually indicative of data entry errors, e.g. swapped latitude and longitude\\
@@ -358,7 +361,7 @@ Tocoyena & 2,922 & 1,092 & 37.4 & 0.1 & 1.9 & 0.2 & 0.0 & 0.5 & 0.8 & 32.3 & 0.8
 
 \begin{landscape}\begin{table}
 
-\caption{\label{tab:unnamed-chunk-3}Conservation assessment for 16 Neotropical taxa of plants and animals based on three datasets. IUCN: global red list assessment obtained from www.iucn.org; GBIF Raw: Preliminary conservation assessment based on IUCN Criterion B using ConR and the raw dataset from GBIF; GBIF filtered: Preliminary conservation assessment based on IUCN Criterion B using ConR and the filtered dataset. Only taxa with at least on species evaluated by IUCN shown.}
+\caption{\label{tab:unnamed-chunk-3}Conservation assessment for 10 Neotropical taxa of plants and animals based on three datasets. IUCN: global red list assessment obtained from www.iucn.org; GBIF Raw: Preliminary conservation assessment based on IUCN Criterion B using ConR and the raw dataset from GBIF; GBIF filtered: Preliminary conservation assessment based on IUCN Criterion B using ConR and the filtered dataset. Only taxa with at least on species evaluated by IUCN shown.}
 \centering
 \fontsize{9}{11}\selectfont
 \begin{tabular}[t]{l>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}}
@@ -389,15 +392,15 @@ Tocoyena & 3 & 13.6 & 4.5 & 22 & 31.8 & 66.7 & 21 & 38.1 & 66.7 & -14.7 & -8.8\\
 \section{Figures}\label{figures}}
 
 \begin{figure}
-\includegraphics[width=\linewidth]{./output/figure_number_of_records} \caption{The difference of records available between the raw and filtered dataset, in a 100x100 km grid across the Neotropics}\label{fig:total}
+\includegraphics[width=\linewidth]{./output/figure_number_of_records} \caption{The difference in records available between the raw and filtered dataset of 16 Neotropical taxa including plants and animals, plotted in a 100x100 km grid across the Neotropics.}\label{fig:total}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\linewidth]{./output/figure_number_of_records_split} \caption{The geographic pattern of the occurrence records flagged by the automated tests of this study. The concentration of records flagged by the basis of record test and individual count test in Central A,erica and southern North America, suggest some specific problem with a contributing dataset from the region. Only filters that flagged at least one record are shown.}\label{fig:split}
+\includegraphics[width=\linewidth]{./output/figure_number_of_records_split} \caption{Geographic location of the occurrence records flagged by the automated tests  applied in this study. The concentration of records flagged on the basis of record test and individual count test in Central America and southern North America.  Only filters that flagged at least one record are shown.}\label{fig:split}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\linewidth]{./output/figure_number_species_richness_difference} \caption{The difference in species richness derived from the raw and filtered datasets (raw - filtered), for 16 taxa of plants and animals.}\label{fig:speciesrichness}
+\includegraphics[width=\linewidth]{./output/figure_number_species_richness_difference} \caption{The difference in species richness derived from the raw and filtered datasets (raw - filtered), for 16 taxa of animals, funghi, and plants.}\label{fig:speciesrichness}
 \end{figure}
 
 \newpage{}
@@ -423,7 +426,7 @@ Chamberlain, S. (2018). \emph{rredlist: 'IUCN' Red List Client}. Retrieved from 
 Chamberlain, S. A. (2017). rgbif: Interface to the Global Biodiversity Information Facility API. R package version 0.9.9. Retrieved from \url{https://github.com/ropensci/rgbif}
 
 \leavevmode\hypertarget{ref-Cosiaux2018}{}%
-Cosiaux, A., Gardiner, L. M., Stauffer, F. W., Bachman, S. P., Sonké, B., Baker, W. J., \& Couvreur, T. L. (2018). Low extinction risk for an important plant resource: Conservation assessments of continental African palms (Arecaceae/Palmae). \emph{Biological Conservation}, \emph{221}, 323--333. \url{https://doi.org/10.1016/j.biocon.2018.02.025}
+Cosiaux, A., Gardiner, L. M., Stauffer, F. W., Bachman, S. P., Sonké, B., Baker, W. J., \& Couvreur, T. L. P. (2018). Low extinction risk for an important plant resource: Conservation assessments of continental African palms (Arecaceae/Palmae). \emph{Biological Conservation}, \emph{221}, 323--333. \url{https://doi.org/10.1016/j.biocon.2018.02.025}
 
 \leavevmode\hypertarget{ref-Dauby2017}{}%
 Dauby, G., Stévart, T., Droissart, V., Cosiaux, A., Deblauwe, V., Simo-Droissart, M., \ldots{} Couvreur, T. L. P. (2017). ConR: An R package to assist large-scale multispecies preliminary conservation assessments using distribution data. \emph{Ecology and Evolution}, \emph{7}(24), 11292--11303. \url{https://doi.org/10.1002/ece3.3704}
@@ -537,6 +540,6 @@ Yesson, C., Brewer, P. W., Sutton, T., Caithness, N., Pahwa, J. S., Burgess, M.,
 Zizka, A., Azevedo, J., Leme, E., Neves, B., Ferreira, A., Caceres, D., \& Zizka, G. (2019). Biogeography and conservation status of the pineapple family ( Bromeliaceae ), (June), 1--13. \url{https://doi.org/10.1111/ddi.13004}
 
 \leavevmode\hypertarget{ref-Zizka2019}{}%
-Zizka, A., Silvestro, D., Andermann, T., Azevedo, J., Duarte Ritter, C., Edler, D., \ldots{} Antonelli, A. (2019). \textless{}scp\textgreater{}CoordinateCleaner\textless{}/scp\textgreater{} : Standardized cleaning of occurrence records from biological collection databases. \emph{Methods in Ecology and Evolution}, \emph{10}(5), 744--751. \url{https://doi.org/10.1111/2041-210X.13152}
+Zizka, A., Silvestro, D., Andermann, T., Azevedo, J., Duarte Ritter, C., Edler, D., \ldots{} Antonelli, A. (2019). CoordinateCleaner: Standardized cleaning of occurrence records from biological collection databases. \emph{Methods in Ecology and Evolution}, \emph{10}(5), 744--751. \url{https://doi.org/10.1111/2041-210X.13152}
 
 \end{document}
