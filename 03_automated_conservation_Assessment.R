@@ -33,39 +33,38 @@ cl_in <- dat_cl%>%
 
 
 # AUtomated assessment
-
 ## raw
-splist <- unique(rw_in$tax)
-
-for(i in 1:length(splist)){
-  print(paste(i, length(splist), sep = "/"))
-  sub <- rw_in %>% filter(tax == splist[i])
-  
-  out <- IUCN.eval(sub)
-  
-  if(i == 1){
-    write_csv(out, "output/automated_assessment_raw.csv")
-  }else{
-    write_csv(out, "output/automated_assessment_raw.csv", append = TRUE)
-  }
-}
-
-## filtered
-splist <- unique(cl_in$tax)
-
-for(i in 1:length(splist)){
-  print(paste(i, length(splist), sep = "/"))
-  sub <- cl_in %>% filter(tax == splist[i])
-  
-  out <- IUCN.eval(sub)
-  
-  if(i == 1){
-    write_csv(out, "output/automated_assessment_clean.csv")
-  }else{
-    write_csv(out, "output/automated_assessment_clean.csv", append = TRUE)
-  }
-}
-
+# splist <- unique(rw_in$tax)
+# 
+# for(i in 1:length(splist)){
+#   print(paste(i, length(splist), sep = "/"))
+#   sub <- rw_in %>% filter(tax == splist[i])
+#   
+#   out <- IUCN.eval(sub)
+#   
+#   if(i == 1){
+#     write_csv(out, "output/automated_assessment_raw.csv")
+#   }else{
+#     write_csv(out, "output/automated_assessment_raw.csv", append = TRUE)
+#   }
+# }
+# 
+# ## filtered
+# splist <- unique(cl_in$tax)
+# 
+# for(i in 1:length(splist)){
+#   print(paste(i, length(splist), sep = "/"))
+#   sub <- cl_in %>% filter(tax == splist[i])
+#   
+#   out <- IUCN.eval(sub)
+#   
+#   if(i == 1){
+#     write_csv(out, "output/automated_assessment_clean.csv")
+#   }else{
+#     write_csv(out, "output/automated_assessment_clean.csv", append = TRUE)
+#   }
+# }
+# 
 
 # IUCN assessment for the species
 iucn.key <- "01524b67f4972521acd1ded2d8b3858e7fedc7da5fd75b8bb2c5456ea18b01ba"

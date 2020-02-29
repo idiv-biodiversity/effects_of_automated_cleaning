@@ -16,7 +16,7 @@ for(i in 1:length(li)){
     mutate_all(as.character)
   if(nrow(sub) > 0){
     sub$taxon <- str_split(li[i], pattern = "_")[[1]][1]
-    sub <- select(sub, taxon, decimalLongitude, decimalLatitude,
+    sub <- dplyr::select(sub, taxon, decimalLongitude, decimalLatitude,
                   coordinateUncertaintyInMeters, 
                   countryCode, gbifID, species, class, family, genus, taxonRank,
                   year, basisOfRecord, individualCount)
@@ -65,8 +65,17 @@ dat <- clean_coordinates(x = dat,
                            seas_ref = buffland) # most test are on by default
 
 # convert .seas flag for the seas taxa
+sea2 <- cc_sea(x = as.data.frame(dat), 
+               lon = "decimalLongitude", 
+               lat = "decimalLatitude", value = "flagged")
+
 dat <- dat %>% 
-  mutate(.sea = ifelse(taxon == "Arhynchobatidae" | taxon == "Harengula" | taxon == "Opisthonema", TRUE, TRUE))
+  mutate(.sea2 = !sea2) %>% 
+  mutate(.sea = ifelse(taxon == "Arhynchobatidae" |
+                         taxon == "Harengula" |
+                         taxon == "Opisthonema" |
+                         taxon == "Diogenidae", .sea2, .sea)) %>% 
+  dplyr::select(-.sea2)
 
 # summarize the records and taxa remaining
 out <- dat %>% 
