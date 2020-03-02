@@ -67,44 +67,44 @@ cl_in <- dat_cl%>%
 # 
 
 # IUCN assessment for the species
-iucn.key <- "01524b67f4972521acd1ded2d8b3858e7fedc7da5fd75b8bb2c5456ea18b01ba"
-
-sp.list <- rw_in$tax %>% 
-  as.character() %>% 
-  unique()
-
-#get conservation status from IUCN
-for(i in 1:length(sp.list)){
-  print(i)
-  pick <- jsonlite::fromJSON(rl_search_(sp.list[i], key = iucn.key))$result
-  
-  if(length(pick) >0){
-    if(i == 1){
-      write_csv(pick, "output/iucn_assessment.csv")
-    }else{
-      write_csv(pick, "output/iucn_assessment.csv", append = TRUE)
-    }
-  }
-
-  Sys.sleep(1)
-}
+# iucn.key <- "01524b67f4972521acd1ded2d8b3858e7fedc7da5fd75b8bb2c5456ea18b01ba"
+# 
+# sp.list <- rw_in$tax %>% 
+#   as.character() %>% 
+#   unique()
+# 
+# #get conservation status from IUCN
+# for(i in 1:length(sp.list)){
+#   print(i)
+#   pick <- jsonlite::fromJSON(rl_search_(sp.list[i], key = iucn.key))$result
+#   
+#   if(length(pick) >0){
+#     if(i == 1){
+#       write_csv(pick, "output/iucn_assessment.csv")
+#     }else{
+#       write_csv(pick, "output/iucn_assessment.csv", append = TRUE)
+#     }
+#   }
+# 
+#   Sys.sleep(1)
+# }
 
 # Load assessments
 rw <- read_csv("output/automated_assessment_raw.csv") %>% 
-  select(taxa, EOO, AOO, Category_CriteriaB, Category_code)
+  dplyr::select(taxa, EOO, AOO, Category_CriteriaB, Category_code)
 names(rw) <- paste("raw", names(rw), sep = "_")
 
 cl <- read_csv("output/automated_assessment_clean.csv")
 names(cl) <- gsub("filtered_", "", names(cl))
-cl <- select(cl, taxa, EOO, AOO, Category_CriteriaB, Category_code)
+cl <- dplyr::select(cl, taxa, EOO, AOO, Category_CriteriaB, Category_code)
 names(cl) <- paste("flag", names(cl), sep = "_")
 
 iucn <- read_csv("output/iucn_assessment.csv") %>% 
-  select(scientific_name, published_year, category, criteria, population_trend, aoo_km2, eoo_km2)
+  dplyr::select(scientific_name, published_year, category, criteria, population_trend, aoo_km2, eoo_km2)
 names(iucn) <- paste("iucn", names(iucn), sep = "_")
 
 tax <- read_csv("output/all_records.csv") %>% 
-  select(taxon, species) %>% 
+  dplyr::select(taxon, species) %>% 
   distinct()
 
 ## join the three datasets and save as the full data for the supplementary
@@ -151,8 +151,6 @@ iucn <- dat %>%
     summarize(raw_iucn_match = round(mean(raw_iucn_agreement, na.rm = TRUE) * 100, 1),
               flag_iucn_match = round(mean(flag_iucn_agreement, na.rm = TRUE) * 100, 1)
               )
-
-
 
 ## select the relevant columns for the table in the paper
 out <- dat %>% 

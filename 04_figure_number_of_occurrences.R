@@ -102,8 +102,11 @@ plo <- dat %>%
                       .inst = "Biodiversity institutions",
                       .cen = "Political centroids",
                       individual_count = "Individual count",
+                      .sea = "Sea/land area",
                       .zer = "Zeros",
-                      .equ = "Equal lat/lon"))
+                      .equ = "Equal lat/lon")) %>% 
+  filter(test != "Equal lat/lon")
+  
 
 
 plo <- split(plo, f = plo$test)
@@ -134,6 +137,7 @@ plo <- plo %>%
                                         "Duplicates", 
                                         "Political centroids",
                                         "Equal lat/lon",
+                                        "Sea/land area",
                                         "Urban areas", 
                                         "Zeros")))
 

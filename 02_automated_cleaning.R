@@ -96,6 +96,28 @@ out <- dat %>%
                             .inst & 
                             .dpl, TRUE, FALSE))
 
+tot <- out %>% 
+  summarize(
+    total_records = length(summary),
+    total_flags = sum(!summary),
+    coordinate_missing = sum(!coordinate_missing),
+    coordinate_precision = sum(!coordinate_precision),
+    coordinate_base = sum(!coordinate_base),
+    individual_count = sum(!individual_count),
+    record_age = sum(!record_age),
+    record_id = sum(!record_id),
+    invalid_coords = sum(!.val),
+    equal_coords = sum(!.equ),
+    zero_coords = sum(!.zer),
+    capital_coords = sum(!.cap),
+    centroid_coords = sum(!.cen),
+    sea_coords = sum(!.sea),
+    urban_coords = sum(!.urb),
+    gbif_coords = sum(!.gbf),
+    inst_coords = sum(!.inst),
+    dupl_coords = sum(!.dpl)) %>% 
+  mutate(taxon = "Total")
+
 summary_table <- out %>% 
   group_by(taxon) %>% 
   summarize(
@@ -117,7 +139,8 @@ summary_table <- out %>%
     gbif_coords = sum(!.gbf),
     inst_coords = sum(!.inst),
     dupl_coords = sum(!.dpl)) %>% 
-mutate(fraction = total_flags / total_records)
+  bind_rows(tot) %>% 
+  mutate(fraction = total_flags / total_records)
 
 # write to disk
 write_csv(summary_table, path = "output/summary_table_flags.csv")

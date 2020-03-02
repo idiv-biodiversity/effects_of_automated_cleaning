@@ -30,10 +30,10 @@
 \RequirePackage{booktabs}
 \RequirePackage{authblk}
 
-\RequirePackage[left=5cm,%
-                right=2cm,%
-                top=2.25cm,%
-                bottom=2.25cm,%
+\RequirePackage[left=2.5cm,%
+                right=2.5cm,%
+                top=2.5cm,%
+                bottom=2.5cm,%
                 headheight=12pt,%
                 letterpaper]{geometry}%
 
@@ -174,8 +174,8 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 \ifdefined\thecorrauthor
   {\raggedright\sffamily\thecorrauthor\par}
 \fi
-%\vskip20pt
-\newpage
+\vskip3pt
+%\newpage
 {%
 \noindent
 {\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\color{color1}\large\sffamily\textbf{ABSTRACT}}}

@@ -78,19 +78,26 @@ plo <- full_join(plo_rw, plo_cl, by = c("taxon", "x", "y")) %>%
 write_csv(plo, "output/specis_richness.csv")
 
 # plots of difference for the main manuscript
+
+## select illustrative taxa
+
+plo <- plo %>% 
+  filter(taxon %in% c("Thozetella", "Tillandsia", "Dipsadidae", "Harengula"))
+
+# plot
 ggplot()+
   geom_polygon(data = world.behr,
                aes(x = long, y = lat, group = group), fill = "transparent", color = "black")+
   geom_tile(data = plo, aes(x = x, y = y, fill = log(difference)), alpha = 0.8)+
-  scale_fill_viridis(name = "Number of\nspecies", direction = 1, na.value = "transparent",
+  scale_fill_viridis(name = "Number of\nremoved\nspecies", direction = 1, na.value = "transparent",
                      breaks = c(log(1), log(5), log(10), log(20), log(30), log(40)),
                      labels = c(1, 5, 10, 20, 30, 40))+
   xlim(-12000000, -3000000)+
   ylim(-6500000, 4500000)+
   coord_fixed()+
   theme_bw()+
-  theme(legend.position = "bottom",
-        legend.key.width = unit(1.5, "cm"),
+  theme(legend.position = "right",
+        legend.key.height = unit(2.5, "cm"),
         axis.title = element_blank(),
         axis.ticks = element_blank(),
         axis.text = element_blank(),
@@ -98,36 +105,36 @@ ggplot()+
         panel.grid.minor = element_blank())+
   facet_wrap(.~ taxon)
 
-ggsave("output/figure_number_species_richness_difference.jpg", height = 10, width=8)
-
+ggsave("output/figure_number_species_richness_difference.pdf", height = 10, width=8)
+# edit the facet titles seperately to the genera in italics and add the figures
 
 # per species plots for the supplement
-li <- unique(plo$taxon)
-
-for(i in 1:length(li)){
-  sub <- filter(plo, taxon == li[i]) %>% 
-    pivot_longer(contains("layer"), values_to = "species", names_to = "dataset") %>% 
-    mutate(dataset = recode(dataset, layer_rw = "Raw", layer_cl = "Filtered")) %>% 
-    mutate(dataset = factor(dataset, levels = c("Raw", "Filtered")))
-  
-  ggplot()+
-    geom_polygon(data = world.behr,
-                 aes(x = long, y = lat, group = group), fill = "transparent", color = "black")+
-    geom_tile(data = sub, aes(x = x, y = y, fill = species), alpha = 0.8)+
-    scale_fill_viridis(name = "Number of\nspecies", direction = 1, na.value = "transparent")+
-    xlim(-12000000, -3000000)+
-    ylim(-6500000, 4500000)+
-    coord_fixed()+
-    theme_bw()+
-    theme(legend.position = "bottom",
-          legend.key.width = unit(1.5, "cm"),
-          axis.title = element_blank(),
-          axis.ticks = element_blank(),
-          axis.text = element_blank(),
-          panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank())+
-    facet_wrap(.~ dataset)
-  
-  ggsave(paste("output/species_richness/", li[i], ".jpg", sep = ""), height = 6.5, width=8)
-  
-}
+# li <- unique(plo$taxon)
+# 
+# for(i in 1:length(li)){
+#   sub <- filter(plo, taxon == li[i]) %>% 
+#     pivot_longer(contains("layer"), values_to = "species", names_to = "dataset") %>% 
+#     mutate(dataset = recode(dataset, layer_rw = "Raw", layer_cl = "Filtered")) %>% 
+#     mutate(dataset = factor(dataset, levels = c("Raw", "Filtered")))
+#   
+#   ggplot()+
+#     geom_polygon(data = world.behr,
+#                  aes(x = long, y = lat, group = group), fill = "transparent", color = "black")+
+#     geom_tile(data = sub, aes(x = x, y = y, fill = species), alpha = 0.8)+
+#     scale_fill_viridis(name = "Number of\nspecies", direction = 1, na.value = "transparent")+
+#     xlim(-12000000, -3000000)+
+#     ylim(-6500000, 4500000)+
+#     coord_fixed()+
+#     theme_bw()+
+#     theme(legend.position = "bottom",
+#           legend.key.width = unit(1.5, "cm"),
+#           axis.title = element_blank(),
+#           axis.ticks = element_blank(),
+#           axis.text = element_blank(),
+#           panel.grid.major = element_blank(),
+#           panel.grid.minor = element_blank())+
+#     facet_wrap(.~ dataset)
+#   
+#   ggsave(paste("output/species_richness/", li[i], ".jpg", sep = ""), height = 6.5, width=8)
+#   
+# }
