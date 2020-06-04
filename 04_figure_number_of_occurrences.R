@@ -4,6 +4,7 @@ library(raster)
 library(viridis)
 library(ggthemes)
 library(speciesgeocodeR)
+library(rnaturalearth)
 
 # load data
 dat <- read_csv("output/all_records.csv") %>% 
@@ -40,7 +41,8 @@ abu_cl <- RichnessGrid(x = pts_cl, ras = be, type = "abu")
 
 plo <- abu_rw - abu_cl
 
-plo <-data.frame(rasterToPoints(plo))
+plo <-data.frame(rasterToPoints(plo)) %>% 
+  filter(layer != 0)
 # 
 # plo_rw <-data.frame(rasterToPoints(abu_rw))%>%
 #   # filter(layer > 0 ) %>% 
@@ -53,17 +55,22 @@ plo <-data.frame(rasterToPoints(plo))
 # plo <- bind_rows(plo_rw, plo_cl)
 
 # background map
-world.inp  <- suppressWarnings(rnaturalearth::ne_download(scale = 50, 
+world.inp  <- suppressWarnings(rnaturalearth::ne_download(scale = 110, 
                                                           type = 'land', 
                                                           category = 'physical',
                                                           load = TRUE))
 world.behr <- spTransform(world.inp, CRS(behr)) %>% fortify()
 
+world.countries <- rnaturalearth::ne_countries(type = 'countries', 
+                                               scale = 110)
+countries.behr <- spTransform(world.countries, CRS(behr)) %>% fortify()
 
 # plot
 ggplot()+
-  geom_polygon(data = world.behr,
-               aes(x = long, y = lat, group = group), fill = "transparent", color = "black")+
+  geom_polygon(data = countries.behr,
+               aes(x = long, y = lat, group = group), 
+               fill = "transparent", 
+               color = "grey20")+
   geom_tile(data = plo, aes(x = x, y = y, fill = log(layer)), alpha = 0.8)+
   scale_fill_viridis(name = "Number of\nrecords", direction = -1, na.value = "transparent",
                      breaks = c(log(1), log(10), log(100), log(1000), log(5000)),
@@ -81,7 +88,7 @@ ggsave("output/figure_number_of_records.jpg", height = 8, width=8)
 
 # Figure 2
 plo <- dat %>% 
-  select(-coordinateUncertaintyInMeters, -taxon, -countryCode, -gbifID,
+  dplyr::select(-coordinateUncertaintyInMeters, -taxon, -countryCode, -gbifID,
          -class,
          -genus, -taxonRank,
          -basisOfRecord, 
@@ -142,9 +149,15 @@ plo <- plo %>%
                                         "Zeros")))
 
 ggplot()+
-  geom_polygon(data = world.behr,
-               aes(x = long, y = lat, group = group), fill = "transparent", color = "black")+
-  geom_tile(data = plo, aes(x = x, y = y, fill = log(layer)), alpha = 0.8)+
+  # geom_polygon(data = world.behr,
+  #              aes(x = long, y = lat, group = group), 
+  #              fill = "transparent", 
+  #              color = "grey20")+
+  geom_polygon(data = countries.behr,
+               aes(x = long, y = lat, group = group), 
+               fill = "transparent", 
+               color = "grey50")+
+  geom_tile(data = plo, aes(x = x, y = y, fill = log(layer)), alpha = 1)+
   scale_fill_viridis(name = "Number of\nrecords", direction = -1, na.value = "transparent",
                      breaks = c(log(1), log(10), log(100), log(1000), log(5000)),
                      labels = c(1,10,100,1000,5000))+
@@ -153,12 +166,14 @@ ggplot()+
   coord_fixed()+
   theme_bw()+
   theme(legend.position = "bottom",
-        legend.key.width = unit(1.5, "cm"),
+        legend.key.width = unit(5, "cm"),
+        legend.key.height = unit(1.5, "cm"),
         axis.title = element_blank(),
         axis.ticks = element_blank(),
         axis.text = element_blank(),
         panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())+
+        panel.grid.minor = element_blank(),
+        text = element_text(size=25))+
   facet_wrap(.~ test)
 
-ggsave("output/figure_number_of_records_split.jpg", height = 10, width=8)
+ggsave("output/figure_number_of_records_split.jpg", height = 20, width=16)

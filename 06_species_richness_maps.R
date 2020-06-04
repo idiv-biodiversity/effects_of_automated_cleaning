@@ -4,6 +4,7 @@ library(raster)
 library(viridis)
 library(ggthemes)
 library(speciesgeocodeR)
+library(rnaturalearth)
 
 # load data
 dat <- read_csv("output/all_records.csv") %>% 
@@ -20,16 +21,19 @@ behr <- '+proj=cea +lon_0=0 +lat_ts=30 +x_0=0 +y_0=0 +datum=WGS84 +ellps=WGS84 +
 wgs1984 <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 
 # background map
-world.inp  <- suppressWarnings(rnaturalearth::ne_download(scale = 50, 
+world.inp  <- suppressWarnings(rnaturalearth::ne_download(scale = 110, 
                                                           type = 'land', 
                                                           category = 'physical',
                                                           load = TRUE))
 world.behr <- spTransform(world.inp, CRS(behr)) %>% fortify()
 
+world.countries <- rnaturalearth::ne_countries(type = 'countries', 
+                                scale = 110)
+countries.behr <- spTransform(world.countries, CRS(behr)) %>% fortify()
 #cleaned data for main mansucript
 plo <- dat %>%
   filter(summary) %>% 
-  select(species, taxon, decimalLongitude, decimalLatitude)
+  dplyr::select(species, taxon, decimalLongitude, decimalLatitude)
 
 plo <- split(plo, f = plo$taxon)
 
@@ -51,7 +55,7 @@ names(plo_cl)[4] <- "layer_cl"
 
 # unfiltered for the supplement
 plo <- dat %>%
-  select(species, taxon, decimalLongitude, decimalLatitude)
+  dplyr::select(species, taxon, decimalLongitude, decimalLatitude)
 
 plo <- split(plo, f = plo$taxon)
 
@@ -82,12 +86,21 @@ write_csv(plo, "output/specis_richness.csv")
 ## select illustrative taxa
 
 plo <- plo %>% 
-  filter(taxon %in% c("Thozetella", "Tillandsia", "Dipsadidae", "Harengula"))
+  filter(taxon %in% c("Thozetella", "Tillandsia", "Dipsadidae", "Harengula")) %>% 
+  filter(difference != 0)
 
 # plot
 ggplot()+
-  geom_polygon(data = world.behr,
-               aes(x = long, y = lat, group = group), fill = "transparent", color = "black")+
+  # geom_polygon(data = world.behr,
+  #              aes(x = long, y = lat, group = group), 
+  #              fill = "transparent", 
+  #              color = "black",
+  #              size = 0.1)+
+  geom_polygon(data = countries.behr,
+               aes(x = long, y = lat, group = group), 
+               fill = "transparent", 
+               color = "grey40",
+               size = 0.1)+
   geom_tile(data = plo, aes(x = x, y = y, fill = log(difference)), alpha = 0.8)+
   scale_fill_viridis(name = "Number of\nremoved\nspecies", direction = 1, na.value = "transparent",
                      breaks = c(log(1), log(5), log(10), log(20), log(30), log(40)),

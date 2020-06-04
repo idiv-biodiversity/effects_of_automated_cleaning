@@ -13,6 +13,25 @@ dat <- read_csv("output/all_records.csv") %>%
 dat_cl <-  dat %>% 
   filter(summary)
 
+## table of species per group
+dat_cl %>% 
+  select(taxon, species) %>% 
+  distinct() %>% 
+  group_by(taxon) %>% 
+  count()
+
+sp <- dat_cl %>% 
+  select(taxon, species) %>% 
+  distinct() %>% 
+  filter(!taxon %in% c("Dipsadidae", "Iridaceae", "Tillandsia"))
+
+sp <- split(sp, f = sp$taxon)
+
+for(i in 1:length(sp)){
+  write_csv(sp[[i]], path = paste("output/species_lists/", names(sp)[i], ".csv", sep = ""))
+}
+
+
 # Automated assessment
 ## raw
 rw_in <- dat%>%

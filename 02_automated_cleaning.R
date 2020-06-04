@@ -120,6 +120,16 @@ tot <- out %>%
 
 summary_table <- out %>% 
   group_by(taxon) %>% 
+  mutate(total_error = !(.sea & .inst & .zer & .equ)) %>% 
+  mutate(total_unfit = !(coordinate_precision&
+                            coordinate_base&
+                            individual_count&
+                            record_age&
+                            record_id&
+                            .cap&
+                            .cen&
+                            .urb&
+                            .dpl)) %>% 
   summarize(
     total_records = length(summary),
     total_flags = sum(!summary),
@@ -138,7 +148,10 @@ summary_table <- out %>%
     urban_coords = sum(!.urb),
     gbif_coords = sum(!.gbf),
     inst_coords = sum(!.inst),
-    dupl_coords = sum(!.dpl)) %>% 
+    dupl_coords = sum(!.dpl),
+    total_error = sum(total_error),
+    total_unfit = sum(total_unfit),
+    ) %>% 
   bind_rows(tot) %>% 
   mutate(fraction = total_flags / total_records)
 
