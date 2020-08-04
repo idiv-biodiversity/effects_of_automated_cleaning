@@ -82,12 +82,20 @@ plo <- full_join(plo_rw, plo_cl, by = c("taxon", "x", "y")) %>%
 write_csv(plo, "output/specis_richness.csv")
 
 # plots of difference for the main manuscript
-
 ## select illustrative taxa
 
 plo <- plo %>% 
   filter(taxon %in% c("Thozetella", "Tillandsia", "Dipsadidae", "Harengula")) %>% 
   filter(difference != 0)
+
+## get the number of initial species for these focus groups to show in the figure legend
+dat %>% 
+  filter(taxon %in% c("Thozetella", "Tillandsia", "Dipsadidae", "Harengula")) %>%
+  dplyr::select(taxon, species) %>% 
+  distinct() %>% 
+  group_by(taxon) %>% 
+    summarize(species = n())
+
 
 # plot
 ggplot()+

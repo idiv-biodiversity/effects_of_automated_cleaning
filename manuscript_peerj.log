@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.7)  14 JUN 2020 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.7)  4 AUG 2020 15:52
 entering extended mode
 **./manuscript_peerj.tex
 (manuscript_peerj.tex
@@ -356,19 +356,287 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count122
 \c@ContinuedFloat=\count123
 )
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblat
+ex.sty"
+Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdft
+excmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infw
+arerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\iflu
+atex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxc
+mds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolb
+ox.sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count124
+)
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvopti
+ons.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvse
+tkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etex
+cmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.s
+ty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count125
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.d
+ef"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count126
+\c@listtotal=\count127
+\c@listcount=\count128
+\c@liststart=\count129
+\c@liststop=\count130
+\c@citecount=\count131
+\c@citetotal=\count132
+\c@multicitecount=\count133
+\c@multicitetotal=\count134
+\c@instcount=\count135
+\c@maxnames=\count136
+\c@minnames=\count137
+\c@maxitems=\count138
+\c@minitems=\count139
+\c@citecounter=\count140
+\c@maxcitecounter=\count141
+\c@savedcitecounter=\count142
+\c@uniquelist=\count143
+\c@uniquename=\count144
+\c@refsection=\count145
+\c@refsegment=\count146
+\c@maxextratitle=\count147
+\c@maxextratitleyear=\count148
+\c@maxextraname=\count149
+\c@maxextradate=\count150
+\c@maxextraalpha=\count151
+\c@abbrvpenalty=\count152
+\c@highnamepenalty=\count153
+\c@lownamepenalty=\count154
+\c@maxparens=\count155
+\c@parenlevel=\count156
+\blx@tempcnta=\count157
+\blx@tempcntb=\count158
+\blx@tempcntc=\count159
+\blx@maxsection=\count160
+\blx@maxsegment@0=\count161
+\blx@notetype=\count162
+\blx@parenlevel@text=\count163
+\blx@parenlevel@foot=\count164
+\blx@sectionciteorder@0=\count165
+\blx@entrysetcounter=\count166
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\c@mincomprange=\count167
+\c@maxcomprange=\count168
+\c@mincompwidth=\count169
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm
+.def"
+File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count170
+\c@savedafterword=\count171
+\c@annotator=\count172
+\c@savedannotator=\count173
+\c@author=\count174
+\c@savedauthor=\count175
+\c@bookauthor=\count176
+\c@savedbookauthor=\count177
+\c@commentator=\count178
+\c@savedcommentator=\count179
+\c@editor=\count180
+\c@savededitor=\count181
+\c@editora=\count182
+\c@savededitora=\count183
+\c@editorb=\count184
+\c@savededitorb=\count185
+\c@editorc=\count186
+\c@savededitorc=\count187
+\c@foreword=\count188
+\c@savedforeword=\count189
+\c@holder=\count190
+\c@savedholder=\count191
+\c@introduction=\count192
+\c@savedintroduction=\count193
+\c@namea=\count194
+\c@savednamea=\count195
+\c@nameb=\count196
+\c@savednameb=\count197
+\c@namec=\count198
+\c@savednamec=\count199
+\c@translator=\count266
+\c@savedtranslator=\count267
+\c@shortauthor=\count268
+\c@savedshortauthor=\count269
+\c@shorteditor=\count270
+\c@savedshorteditor=\count271
+\c@labelname=\count272
+\c@savedlabelname=\count273
+\c@institution=\count274
+\c@savedinstitution=\count275
+\c@lista=\count276
+\c@savedlista=\count277
+\c@listb=\count278
+\c@savedlistb=\count279
+\c@listc=\count280
+\c@savedlistc=\count281
+\c@listd=\count282
+\c@savedlistd=\count283
+\c@liste=\count284
+\c@savedliste=\count285
+\c@listf=\count286
+\c@savedlistf=\count287
+\c@location=\count288
+\c@savedlocation=\count289
+\c@organization=\count290
+\c@savedorganization=\count291
+\c@origlocation=\count292
+\c@savedoriglocation=\count293
+\c@origpublisher=\count294
+\c@savedorigpublisher=\count295
+\c@publisher=\count296
+\c@savedpublisher=\count297
+\c@language=\count298
+\c@savedlanguage=\count299
+\c@origlanguage=\count300
+\c@savedoriglanguage=\count301
+\c@pageref=\count302
+\c@savedpageref=\count303
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+\locallabelnumberwidth=\skip65
+\locallabelalphawidth=\skip66
+\localshorthandwidth=\skip67
+\localshortjournalwidth=\skip68
+\localshortserieswidth=\skip69
+\localshorttitlewidth=\skip70
+\localshortauthorwidth=\skip71
+\localshorteditorwidth=\skip72
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-co
+mpat.def"
+File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblat
+ex.def"
+File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+\c@textcitecount=\count304
+\c@textcitetotal=\count305
+\c@textcitemaxnames=\count306
+\c@biburlnumpenalty=\count307
+\c@biburlucpenalty=\count308
+\c@biburllcpenalty=\count309
+\c@smartand=\count310
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\nu
+meric.bbx"
+File: numeric.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\st
+andard.bbx"
+File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count311
+\c@bbx:relatedtotal=\count312
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\nu
+meric.cbx"
+File: numeric.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblat
+ex.cfg"
+File: biblatex.cfg 
+))
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyh
 dr.sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip51
-\f@nch@O@elh=\skip52
-\f@nch@O@erh=\skip53
-\f@nch@O@olh=\skip54
-\f@nch@O@orh=\skip55
-\f@nch@O@elf=\skip56
-\f@nch@O@erf=\skip57
-\f@nch@O@olf=\skip58
-\f@nch@O@orf=\skip59
+\f@nch@headwidth=\skip73
+\f@nch@O@elh=\skip74
+\f@nch@O@erh=\skip75
+\f@nch@O@olh=\skip76
+\f@nch@O@orh=\skip77
+\f@nch@O@elf=\skip78
+\f@nch@O@erf=\skip79
+\f@nch@O@olf=\skip80
+\f@nch@O@orf=\skip81
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lastpage\lastpa
 ge.sty"
@@ -378,8 +646,8 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box29
-\beforetitleunit=\skip60
-\aftertitleunit=\skip61
+\beforetitleunit=\skip82
+\aftertitleunit=\skip83
 \ttl@plus=\dimen151
 \ttl@minus=\dimen152
 \ttl@toksa=\toks24
@@ -399,14 +667,14 @@ Package: titletoc 2011/12/15 v1.6 TOC entries
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumit
 em.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip62
+\labelindent=\skip84
 \enit@outerparindent=\dimen157
 \enit@toks=\toks25
 \enit@inbox=\box30
-\enit@count@id=\count124
-\enitdp@description=\count125
+\enit@count@id=\count313
+\enitdp@description=\count314
 )
-\tocsep=\skip63
+\tocsep=\skip85
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.s
 ty"
@@ -417,107 +685,107 @@ Package: expl3 2018-11-19 L3 programming layer (loader)
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-
 code.tex"
 Package: expl3 2018-11-19 L3 programming layer (code)
-\c_max_int=\count126
-\l_tmpa_int=\count127
-\l_tmpb_int=\count128
-\g_tmpa_int=\count129
-\g_tmpb_int=\count130
-\g__kernel_prg_map_int=\count131
-\c_log_iow=\count132
-\l_iow_line_count_int=\count133
-\l__iow_line_target_int=\count134
-\l__iow_one_indent_int=\count135
-\l__iow_indent_int=\count136
+\c_max_int=\count315
+\l_tmpa_int=\count316
+\l_tmpb_int=\count317
+\g_tmpa_int=\count318
+\g_tmpb_int=\count319
+\g__kernel_prg_map_int=\count320
+\c_log_iow=\count321
+\l_iow_line_count_int=\count322
+\l__iow_line_target_int=\count323
+\l__iow_one_indent_int=\count324
+\l__iow_indent_int=\count325
 \c_zero_dim=\dimen158
 \c_max_dim=\dimen159
 \l_tmpa_dim=\dimen160
 \l_tmpb_dim=\dimen161
 \g_tmpa_dim=\dimen162
 \g_tmpb_dim=\dimen163
-\c_zero_skip=\skip64
-\c_max_skip=\skip65
-\l_tmpa_skip=\skip66
-\l_tmpb_skip=\skip67
-\g_tmpa_skip=\skip68
-\g_tmpb_skip=\skip69
-\c_zero_muskip=\muskip11
-\c_max_muskip=\muskip12
-\l_tmpa_muskip=\muskip13
-\l_tmpb_muskip=\muskip14
-\g_tmpa_muskip=\muskip15
-\g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count137
-\l__intarray_loop_int=\count138
+\c_zero_skip=\skip86
+\c_max_skip=\skip87
+\l_tmpa_skip=\skip88
+\l_tmpb_skip=\skip89
+\g_tmpa_skip=\skip90
+\g_tmpb_skip=\skip91
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count326
+\l__intarray_loop_int=\count327
 \c__intarray_sp_dim=\dimen164
-\g__intarray_font_int=\count139
-\c__fp_leading_shift_int=\count140
-\c__fp_middle_shift_int=\count141
-\c__fp_trailing_shift_int=\count142
-\c__fp_big_leading_shift_int=\count143
-\c__fp_big_middle_shift_int=\count144
-\c__fp_big_trailing_shift_int=\count145
-\c__fp_Bigg_leading_shift_int=\count146
-\c__fp_Bigg_middle_shift_int=\count147
-\c__fp_Bigg_trailing_shift_int=\count148
-\c__kernel_randint_max_int=\count149
-\g__fp_array_int=\count150
-\l__fp_array_loop_int=\count151
-\l__sort_length_int=\count152
-\l__sort_min_int=\count153
-\l__sort_top_int=\count154
-\l__sort_max_int=\count155
-\l__sort_true_max_int=\count156
-\l__sort_block_int=\count157
-\l__sort_begin_int=\count158
-\l__sort_end_int=\count159
-\l__sort_A_int=\count160
-\l__sort_B_int=\count161
-\l__sort_C_int=\count162
-\l__tl_analysis_normal_int=\count163
-\l__tl_analysis_index_int=\count164
-\l__tl_analysis_nesting_int=\count165
-\l__tl_analysis_type_int=\count166
-\l__regex_internal_a_int=\count167
-\l__regex_internal_b_int=\count168
-\l__regex_internal_c_int=\count169
-\l__regex_balance_int=\count170
-\l__regex_group_level_int=\count171
-\l__regex_mode_int=\count172
-\c__regex_cs_in_class_mode_int=\count173
-\c__regex_cs_mode_int=\count174
-\l__regex_catcodes_int=\count175
-\l__regex_default_catcodes_int=\count176
-\c__regex_catcode_D_int=\count177
-\c__regex_catcode_S_int=\count178
-\c__regex_catcode_L_int=\count179
-\c__regex_catcode_O_int=\count180
-\c__regex_catcode_A_int=\count181
-\c__regex_all_catcodes_int=\count182
-\l__regex_show_lines_int=\count183
-\l__regex_min_state_int=\count184
-\l__regex_max_state_int=\count185
-\l__regex_left_state_int=\count186
-\l__regex_right_state_int=\count187
-\l__regex_capturing_group_int=\count188
-\l__regex_min_pos_int=\count189
-\l__regex_max_pos_int=\count190
-\l__regex_curr_pos_int=\count191
-\l__regex_start_pos_int=\count192
-\l__regex_success_pos_int=\count193
-\l__regex_curr_char_int=\count194
-\l__regex_curr_catcode_int=\count195
-\l__regex_last_char_int=\count196
-\l__regex_case_changed_char_int=\count197
-\l__regex_curr_state_int=\count198
-\l__regex_step_int=\count199
-\l__regex_min_active_int=\count266
-\l__regex_max_active_int=\count267
-\l__regex_replacement_csnames_int=\count268
-\l__regex_match_count_int=\count269
-\l__regex_min_submatch_int=\count270
-\l__regex_submatch_int=\count271
-\l__regex_zeroth_submatch_int=\count272
-\g__regex_trace_regex_int=\count273
+\g__intarray_font_int=\count328
+\c__fp_leading_shift_int=\count329
+\c__fp_middle_shift_int=\count330
+\c__fp_trailing_shift_int=\count331
+\c__fp_big_leading_shift_int=\count332
+\c__fp_big_middle_shift_int=\count333
+\c__fp_big_trailing_shift_int=\count334
+\c__fp_Bigg_leading_shift_int=\count335
+\c__fp_Bigg_middle_shift_int=\count336
+\c__fp_Bigg_trailing_shift_int=\count337
+\c__kernel_randint_max_int=\count338
+\g__fp_array_int=\count339
+\l__fp_array_loop_int=\count340
+\l__sort_length_int=\count341
+\l__sort_min_int=\count342
+\l__sort_top_int=\count343
+\l__sort_max_int=\count344
+\l__sort_true_max_int=\count345
+\l__sort_block_int=\count346
+\l__sort_begin_int=\count347
+\l__sort_end_int=\count348
+\l__sort_A_int=\count349
+\l__sort_B_int=\count350
+\l__sort_C_int=\count351
+\l__tl_analysis_normal_int=\count352
+\l__tl_analysis_index_int=\count353
+\l__tl_analysis_nesting_int=\count354
+\l__tl_analysis_type_int=\count355
+\l__regex_internal_a_int=\count356
+\l__regex_internal_b_int=\count357
+\l__regex_internal_c_int=\count358
+\l__regex_balance_int=\count359
+\l__regex_group_level_int=\count360
+\l__regex_mode_int=\count361
+\c__regex_cs_in_class_mode_int=\count362
+\c__regex_cs_mode_int=\count363
+\l__regex_catcodes_int=\count364
+\l__regex_default_catcodes_int=\count365
+\c__regex_catcode_D_int=\count366
+\c__regex_catcode_S_int=\count367
+\c__regex_catcode_L_int=\count368
+\c__regex_catcode_O_int=\count369
+\c__regex_catcode_A_int=\count370
+\c__regex_all_catcodes_int=\count371
+\l__regex_show_lines_int=\count372
+\l__regex_min_state_int=\count373
+\l__regex_max_state_int=\count374
+\l__regex_left_state_int=\count375
+\l__regex_right_state_int=\count376
+\l__regex_capturing_group_int=\count377
+\l__regex_min_pos_int=\count378
+\l__regex_max_pos_int=\count379
+\l__regex_curr_pos_int=\count380
+\l__regex_start_pos_int=\count381
+\l__regex_success_pos_int=\count382
+\l__regex_curr_char_int=\count383
+\l__regex_curr_catcode_int=\count384
+\l__regex_last_char_int=\count385
+\l__regex_case_changed_char_int=\count386
+\l__regex_curr_state_int=\count387
+\l__regex_step_int=\count388
+\l__regex_min_active_int=\count389
+\l__regex_max_active_int=\count390
+\l__regex_replacement_csnames_int=\count391
+\l__regex_match_count_int=\count392
+\l__regex_min_submatch_int=\count393
+\l__regex_submatch_int=\count394
+\l__regex_zeroth_submatch_int=\count395
+\g__regex_trace_regex_int=\count396
 \c_empty_box=\box31
 \l_tmpa_box=\box32
 \l_tmpb_box=\box33
@@ -551,7 +819,7 @@ Package: expl3 2018-11-19 L3 programming layer (code)
 \l__coffin_display_offset_dim=\dimen180
 \l__coffin_display_x_dim=\dimen181
 \l__coffin_display_y_dim=\dimen182
-\g__file_internal_ior=\read1
+\g__file_internal_ior=\read2
 \l__coffin_bounding_shift_dim=\dimen183
 \l__coffin_left_corner_dim=\dimen184
 \l__coffin_right_corner_dim=\dimen185
@@ -559,22 +827,22 @@ Package: expl3 2018-11-19 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen187
 \l__coffin_scaled_total_height_dim=\dimen188
 \l__coffin_scaled_width_dim=\dimen189
-\l__seq_internal_a_int=\count274
-\l__seq_internal_b_int=\count275
+\l__seq_internal_a_int=\count397
+\l__seq_internal_b_int=\count398
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfm
 ode.def"
 File: l3pdfmode.def 2018-11-19 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count276
+\l__driver_color_stack_int=\count399
 ))
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xpar
 se\xparse.sty"
 Package: xparse 2018-10-17 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count277
-\g__xparse_grabber_int=\count278
-\l__xparse_m_args_int=\count279
-\l__xparse_mandatory_args_int=\count280
-\l__xparse_v_nesting_int=\count281
+\l__xparse_current_arg_int=\count400
+\g__xparse_grabber_int=\count401
+\l__xparse_m_args_int=\count402
+\l__xparse_mandatory_args_int=\count403
+\l__xparse_v_nesting_int=\count404
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -586,11 +854,11 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 type.sty"
 Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks26
-\MT@count=\count282
+\MT@count=\count405
 LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen190
 LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
-\MT@listname@count=\count283
+\MT@listname@count=\count406
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micro
 type-pdftex.def"
@@ -598,7 +866,7 @@ File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 913.
 LaTeX Info: Redefining \lslig on input line 913.
-\MT@outer@space=\skip70
+\MT@outer@space=\skip92
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -619,26 +887,16 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 ub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
@@ -650,7 +908,6 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
@@ -659,13 +916,9 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 k.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvopti
-ons.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-)
 \@linkdim=\dimen191
-\Hy@linkcounter=\count284
-\Hy@pagecounter=\count285
+\Hy@linkcounter=\count407
+\Hy@pagecounter=\count408
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc
 .def"
@@ -673,7 +926,7 @@ File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count286
+\Hy@SavedSpaceFactor=\count409
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperr
 ef.cfg"
@@ -694,14 +947,10 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count287
-("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
+\c@Hy@tempcnt=\count410
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen192
-\Fld@menulength=\count288
+\Fld@menulength=\count411
 \Field@Width=\dimen193
 \Fld@charsize=\dimen194
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -713,17 +962,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count289
-\c@Item=\count290
-\c@Hfootnote=\count291
+\Hy@abspage=\count412
+\c@Item=\count413
+\c@Hfootnote=\count414
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdfte
 x.def"
 File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count292
-\c@bookmark@seq@number=\count293
+\Fld@listcount=\count415
+\c@bookmark@seq@number=\count416
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunf
 ilecheck.sty"
@@ -731,25 +980,25 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip71
+\Hy@SectionHShift=\skip93
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable
 .sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip72
-\LTright=\skip73
-\LTpre=\skip74
-\LTpost=\skip75
-\LTchunksize=\count294
+\LTleft=\skip94
+\LTright=\skip95
+\LTpre=\skip96
+\LTpost=\skip97
+\LTchunksize=\count417
 \LTcapwidth=\dimen195
 \LT@head=\box46
 \LT@firsthead=\box47
 \LT@foot=\box48
 \LT@lastfoot=\box49
-\LT@cols=\count295
-\LT@rows=\count296
-\c@LT@tables=\count297
-\c@LT@chunks=\count298
+\LT@cols=\count418
+\LT@rows=\count419
+\c@LT@tables=\count420
+\c@LT@chunks=\count421
 \LT@p@ftn=\toks27
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjus
@@ -767,7 +1016,7 @@ ils.tex"
 \XKV@toks=\toks28
 \XKV@tempa@toks=\toks29
 )
-\XKV@depth=\count299
+\XKV@depth=\count422
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjca
@@ -806,56 +1055,56 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifodd
 page.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count300
+\c@checkoddpage=\count423
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwid
 th.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box51
-\sift@deathcycles=\count301
+\sift@deathcycles=\count424
 \@vwid@loff=\dimen264
 \@vwid@roff=\dimen265
-)) ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.
+)) ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.
 sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count425
+\float@exts=\toks30
+\float@box=\box52
+\@float@everytoks=\toks31
+\@floatcapt=\box53
+) ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.s
+ty"
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \col@sep=\dimen266
-\ar@mcellbox=\box52
+\ar@mcellbox=\box54
 \extrarowheight=\dimen267
-\NC@list=\toks30
-\extratabsurround=\skip76
-\backup@length=\skip77
-\ar@cellbox=\box53
+\NC@list=\toks32
+\extratabsurround=\skip98
+\backup@length=\skip99
+\ar@cellbox=\box55
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multir
 ow.sty"
 Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
-\multirow@colwidth=\skip78
-\multirow@cntb=\count302
-\multirow@dima=\skip79
+\multirow@colwidth=\skip100
+\multirow@cntb=\count426
+\multirow@dima=\skip101
 \bigstrutjot=\dimen268
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig
 .sty"
 \wrapoverhang=\dimen269
 \WF@size=\dimen270
-\c@WF@wrappedlines=\count303
-\WF@box=\box54
-\WF@everypar=\toks31
+\c@WF@wrappedlines=\count427
+\WF@box=\box56
+\WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
-) ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.s
-ty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count304
-\float@exts=\toks32
-\float@box=\box55
-\@float@everytoks=\toks33
-\@floatcapt=\box56
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colort
 bl.sty"
 Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
 \everycr=\toks34
-\minrowclearance=\skip80
+\minrowclearance=\skip102
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflsc
 ape.sty"
@@ -869,12 +1118,12 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tabu\tabu.sty
 "
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
-\c@taburow=\count305
-\tabu@nbcols=\count306
-\tabu@cnt=\count307
-\tabu@Xcol=\count308
-\tabu@alloc=\count309
-\tabu@nested=\count310
+\c@taburow=\count428
+\tabu@nbcols=\count429
+\tabu@cnt=\count430
+\tabu@Xcol=\count431
+\tabu@alloc=\count432
+\tabu@nested=\count433
 \tabu@target=\dimen271
 \tabu@spreadtarget=\dimen272
 \tabu@naturalX=\dimen273
@@ -890,7 +1139,7 @@ Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 \tabu@arstrutbox=\box58
 \tabu@hleads=\box59
 \tabu@vleads=\box60
-\tabu@cellskip=\skip81
+\tabu@cellskip=\skip103
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\threeparttable\
 threeparttable.sty"
@@ -909,15 +1158,15 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 spaces.sty"
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip82
+\TPTL@width=\skip104
 ) ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty
 "
 \UL@box=\box62
 \UL@hyphenbox=\box63
-\UL@skip=\skip83
+\UL@skip=\skip105
 \UL@hook=\toks37
 \UL@height=\dimen280
-\UL@pe=\count311
+\UL@pe=\count434
 \UL@pixel=\dimen281
 \ULC@box=\box64
 Package: ulem 2012/05/18
@@ -927,28 +1176,42 @@ Package: ulem 2012/05/18
 ll.sty"
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen283
-\c@nlinenum=\count312
+\c@nlinenum=\count435
 \TeXr@lab=\toks38
-) (manuscript_peerj.aux)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\en
+glish.lbx"
+File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count436
+\@quotereset=\count437
+(manuscript_peerj.aux)
 \openout1 = `manuscript_peerj.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 121.
 
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.f
@@ -958,16 +1221,16 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf
 .mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
+\scratchcounter=\count438
 \scratchdimen=\dimen284
 \scratchbox=\box65
-\nofMPsegments=\count314
-\nofMParguments=\count315
+\nofMPsegments=\count439
+\nofMParguments=\count440
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count316
+\MPscratchCnt=\count441
 \MPscratchDim=\dimen285
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
+\MPnumerator=\count442
+\makeMPintoPDFobject=\count443
 \everyMPtoPDFconversion=\toks40
 )
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstop
@@ -1031,10 +1294,20 @@ Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `manuscript_peerj.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'manuscript_peerj.bbl' not found.
+No file manuscript_peerj.bbl.
+Package biblatex Info: Reference section=0 on input line 121.
+Package biblatex Info: Reference segment=0 on input line 121.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 119.
-LaTeX Info: Redefining \microtypecontext on input line 119.
+(lastpage)             ! on input line 121.
+LaTeX Info: Redefining \microtypecontext on input line 121.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1050,7 +1323,7 @@ m.cfg"
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 119.
+Package hyperref Info: Link coloring OFF on input line 121.
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namere
 f.sty"
@@ -1060,16 +1333,16 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 itlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count319
+\c@section@level=\count444
 )
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
 (manuscript_peerj.out) (manuscript_peerj.out)
-\@outlinefile=\write3
-\openout3 = `manuscript_peerj.out'.
+\@outlinefile=\write4
+\openout4 = `manuscript_peerj.out'.
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 123.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 125.
 
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1phv.f
@@ -1081,11 +1354,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 125.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 12
-3.
+5.
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm
 .fd"
@@ -1096,32 +1369,32 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 12
-3.
+5.
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm
 .fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 12
-3.
+5.
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm
 .fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 12
-3.
+5.
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm
 .fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-ms
 a.cfg"
@@ -1132,12 +1405,12 @@ b.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 123.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 125.
 
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.f
@@ -1149,7 +1422,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 123.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 125.
 
 Underfull \vbox (badness 3989) has occurred while \output is active []
 
@@ -1158,17 +1431,17 @@ Underfull \vbox (badness 3989) has occurred while \output is active []
 {C:/Users/az64mycy/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 156.
+(hyperref)                be the same. Added a new anchor on input line 158.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 159.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 161.
 [2] [3]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 210.
+(hyperref)                be the same. Added a new anchor on input line 212.
 
 [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 256.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 258.
 
 
 ("C:\Users\az64mycy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.f
@@ -1176,346 +1449,363 @@ d"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 256.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 272.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
+[6] [7] [8]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 278.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 272.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 278.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.14006> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 272.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 278.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.60007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 272.
-<input/phylopics/converted/diogenidae.png, id=127, 77.28876pt x 57.21375pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 278.
+<input/phylopics/converted/diogenidae.png, id=149, 76.285pt x 57.21375pt>
 File: input/phylopics/converted/diogenidae.png Graphic file (type png)
 <use input/phylopics/converted/diogenidae.png>
 Package pdftex.def Info: input/phylopics/converted/diogenidae.png  used on inpu
-t line 276.
-(pdftex.def)             Requested size: 77.28856pt x 57.2136pt.
-<input/phylopics/converted/entomobryidae.png, id=128, 82.3075pt x 57.21375pt>
+t line 282.
+(pdftex.def)             Requested size: 76.2848pt x 57.2136pt.
+<input/phylopics/converted/entomobryidae.png, id=150, 46.1725pt x 57.21375pt>
 File: input/phylopics/converted/entomobryidae.png Graphic file (type png)
 <use input/phylopics/converted/entomobryidae.png>
 Package pdftex.def Info: input/phylopics/converted/entomobryidae.png  used on i
-nput line 277.
-(pdftex.def)             Requested size: 82.30728pt x 57.2136pt.
-<input/phylopics/converted/neanuridae.png, id=129, 99.37125pt x 57.21375pt>
+nput line 283.
+(pdftex.def)             Requested size: 46.17236pt x 57.2136pt.
+<input/phylopics/converted/neanuridae.png, id=151, 77.5698pt x 56.8524pt>
 File: input/phylopics/converted/neanuridae.png Graphic file (type png)
 <use input/phylopics/converted/neanuridae.png>
 Package pdftex.def Info: input/phylopics/converted/neanuridae.png  used on inpu
-t line 278.
-(pdftex.def)             Requested size: 99.371pt x 57.2136pt.
-<input/phylopics/converted/tityus.png, id=130, 44.165pt x 57.21375pt>
+t line 284.
+(pdftex.def)             Requested size: 77.5696pt x 56.85225pt.
+<input/phylopics/converted/tityus.png, id=152, 79.79813pt x 57.21375pt>
 File: input/phylopics/converted/tityus.png Graphic file (type png)
 <use input/phylopics/converted/tityus.png>
 Package pdftex.def Info: input/phylopics/converted/tityus.png  used on input li
-ne 279.
-(pdftex.def)             Requested size: 44.16487pt x 57.2136pt.
-<input/phylopics/converted/arhynchobatidae.png, id=131, 39.14626pt x 57.21375pt
+ne 285.
+(pdftex.def)             Requested size: 79.79791pt x 57.2136pt.
+<input/phylopics/converted/arhynchobatidae.png, id=153, 39.14626pt x 57.21375pt
 >
 File: input/phylopics/converted/arhynchobatidae.png Graphic file (type png)
 <use input/phylopics/converted/arhynchobatidae.png>
 Package pdftex.def Info: input/phylopics/converted/arhynchobatidae.png  used on
- input line 280.
+ input line 286.
 (pdftex.def)             Requested size: 39.14615pt x 57.2136pt.
 
-Overfull \hbox (4.56958pt too wide) in paragraph at lines 280--280
+Overfull \hbox (4.56958pt too wide) in paragraph at lines 286--286
 []|\OT1/ptm/m/n/11 Arhynchobatidae|  
  []
 
-<input/phylopics/converted/dipsadidae.png, id=132, 74.2775pt x 57.21375pt>
+<input/phylopics/converted/dipsadidae.png, id=154, 74.2775pt x 57.21375pt>
 File: input/phylopics/converted/dipsadidae.png Graphic file (type png)
 <use input/phylopics/converted/dipsadidae.png>
 Package pdftex.def Info: input/phylopics/converted/dipsadidae.png  used on inpu
-t line 282.
+t line 288.
 (pdftex.def)             Requested size: 74.27731pt x 57.2136pt.
-<input/phylopics/converted/harengula.png, id=133, 171.64125pt x 57.21375pt>
+<input/phylopics/converted/harengula.png, id=155, 171.64125pt x 57.21375pt>
 File: input/phylopics/converted/harengula.png Graphic file (type png)
 <use input/phylopics/converted/harengula.png>
 Package pdftex.def Info: input/phylopics/converted/harengula.png  used on input
- line 283.
+ line 289.
 (pdftex.def)             Requested size: 171.64081pt x 57.2136pt.
 
-Overfull \hbox (2.44133pt too wide) in paragraph at lines 283--283
+Overfull \hbox (2.44133pt too wide) in paragraph at lines 289--289
 []|[]|  
  []
 
-<input/phylopics/converted/thozetella.png, id=134, 36.135pt x 57.21375pt>
+<input/phylopics/converted/thozetella.png, id=156, 36.135pt x 57.21375pt>
 File: input/phylopics/converted/thozetella.png Graphic file (type png)
 <use input/phylopics/converted/thozetella.png>
 Package pdftex.def Info: input/phylopics/converted/thozetella.png  used on inpu
-t line 285.
+t line 291.
 (pdftex.def)             Requested size: 36.13489pt x 57.2136pt.
 
-Overfull \hbox (1.99161pt too wide) in paragraph at lines 285--286
+Overfull \hbox (1.99161pt too wide) in paragraph at lines 291--292
 []|\OT1/ptm/m/n/11 Chaetosphaeriaceae|  
  []
 
-<input/phylopics/converted/conchocarpus.png, id=135, 49.18375pt x 57.21375pt>
+<input/phylopics/converted/conchocarpus.png, id=157, 49.18375pt x 57.21375pt>
 File: input/phylopics/converted/conchocarpus.png Graphic file (type png)
 <use input/phylopics/converted/conchocarpus.png>
 Package pdftex.def Info: input/phylopics/converted/conchocarpus.png  used on in
-put line 287.
+put line 293.
 (pdftex.def)             Requested size: 49.18361pt x 57.2136pt.
-
-Overfull \hbox (1.75688pt too wide) in paragraph at lines 287--287
-[]|\OT1/ptm/m/n/11 Angiosperms|  
- []
-
-<input/phylopics/converted/gaylussacia.png, id=136, 66.2475pt x 57.21375pt>
-File: input/phylopics/converted/gaylussacia.png Graphic file (type png)
-<use input/phylopics/converted/gaylussacia.png>
-Package pdftex.def Info: input/phylopics/converted/gaylussacia.png  used on inp
-ut line 288.
-(pdftex.def)             Requested size: 66.24733pt x 57.2136pt.
-
-Overfull \hbox (4.79272pt too wide) in paragraph at lines 288--288
-[]|\OT1/ptm/m/n/11 Huckleberries|  
- []
-
-
-Overfull \hbox (1.75688pt too wide) in paragraph at lines 288--288
-[]|\OT1/ptm/m/n/11 Angiosperms|  
- []
-
-<input/phylopics/converted/harpalyce.png, id=137, 39.14626pt x 57.21375pt>
-File: input/phylopics/converted/harpalyce.png Graphic file (type png)
-<use input/phylopics/converted/harpalyce.png>
-Package pdftex.def Info: input/phylopics/converted/harpalyce.png  used on input
- line 290.
-(pdftex.def)             Requested size: 39.14615pt x 57.2136pt.
-
-Overfull \hbox (1.75688pt too wide) in paragraph at lines 290--290
-[]|\OT1/ptm/m/n/11 Angiosperms|  
- []
-
-<input/phylopics/converted/iridaceae.png, id=138, 117.5592pt x 282.3348pt>
-File: input/phylopics/converted/iridaceae.png Graphic file (type png)
-<use input/phylopics/converted/iridaceae.png>
-Package pdftex.def Info: input/phylopics/converted/iridaceae.png  used on input
- line 291.
-(pdftex.def)             Requested size: 117.5589pt x 282.33409pt.
-
-Overfull \hbox (1.75688pt too wide) in paragraph at lines 291--291
-[]|\OT1/ptm/m/n/11 Angiosperms|  
- []
-
-<input/phylopics/converted/lepismium.png, id=140, 50.1875pt x 57.21375pt>
-File: input/phylopics/converted/lepismium.png Graphic file (type png)
-<use input/phylopics/converted/lepismium.png>
-Package pdftex.def Info: input/phylopics/converted/lepismium.png  used on input
- line 292.
-(pdftex.def)             Requested size: 50.18736pt x 57.2136pt.
-
-Overfull \hbox (1.75688pt too wide) in paragraph at lines 292--292
-[]|\OT1/ptm/m/n/11 Angiosperms|  
- []
-
-<input/phylopics/converted/oocephalus.png, id=141, 73.27374pt x 57.21375pt>
-File: input/phylopics/converted/oocephalus.png Graphic file (type png)
-<use input/phylopics/converted/oocephalus.png>
-Package pdftex.def Info: input/phylopics/converted/oocephalus.png  used on inpu
-t line 293.
-(pdftex.def)             Requested size: 73.27354pt x 57.2136pt.
 
 Overfull \hbox (1.75688pt too wide) in paragraph at lines 293--293
 []|\OT1/ptm/m/n/11 Angiosperms|  
  []
 
-<input/phylopics/converted/pilosocereus.png, id=142, 50.1875pt x 57.21375pt>
-File: input/phylopics/converted/pilosocereus.png Graphic file (type png)
-<use input/phylopics/converted/pilosocereus.png>
-Package pdftex.def Info: input/phylopics/converted/pilosocereus.png  used on in
-put line 294.
-(pdftex.def)             Requested size: 50.18736pt x 57.2136pt.
+<input/phylopics/converted/gaylussacia.png, id=158, 39.14626pt x 57.21375pt>
+File: input/phylopics/converted/gaylussacia.png Graphic file (type png)
+<use input/phylopics/converted/gaylussacia.png>
+Package pdftex.def Info: input/phylopics/converted/gaylussacia.png  used on inp
+ut line 294.
+(pdftex.def)             Requested size: 39.14615pt x 57.2136pt.
+
+Overfull \hbox (4.79272pt too wide) in paragraph at lines 294--294
+[]|\OT1/ptm/m/n/11 Huckleberries|  
+ []
+
 
 Overfull \hbox (1.75688pt too wide) in paragraph at lines 294--294
 []|\OT1/ptm/m/n/11 Angiosperms|  
  []
 
-<input/phylopics/converted/prosthechea.png, id=143, 53.19875pt x 57.21375pt>
-File: input/phylopics/converted/prosthechea.png Graphic file (type png)
-<use input/phylopics/converted/prosthechea.png>
-Package pdftex.def Info: input/phylopics/converted/prosthechea.png  used on inp
-ut line 296.
-(pdftex.def)             Requested size: 53.19861pt x 57.2136pt.
+<input/phylopics/converted/harpalyce.png, id=159, 39.14626pt x 57.21375pt>
+File: input/phylopics/converted/harpalyce.png Graphic file (type png)
+<use input/phylopics/converted/harpalyce.png>
+Package pdftex.def Info: input/phylopics/converted/harpalyce.png  used on input
+ line 296.
+(pdftex.def)             Requested size: 39.14615pt x 57.2136pt.
 
 Overfull \hbox (1.75688pt too wide) in paragraph at lines 296--296
 []|\OT1/ptm/m/n/11 Angiosperms|  
  []
 
-<input/phylopics/converted/tillandsia.png, id=144, 42.1575pt x 57.21375pt>
-File: input/phylopics/converted/tillandsia.png Graphic file (type png)
-<use input/phylopics/converted/tillandsia.png>
-Package pdftex.def Info: input/phylopics/converted/tillandsia.png  used on inpu
-t line 297.
-(pdftex.def)             Requested size: 42.15738pt x 57.2136pt.
+<input/phylopics/converted/iridaceae.png, id=160, 117.5592pt x 282.3348pt>
+File: input/phylopics/converted/iridaceae.png Graphic file (type png)
+<use input/phylopics/converted/iridaceae.png>
+Package pdftex.def Info: input/phylopics/converted/iridaceae.png  used on input
+ line 297.
+(pdftex.def)             Requested size: 117.5589pt x 282.33409pt.
 
 Overfull \hbox (1.75688pt too wide) in paragraph at lines 297--297
 []|\OT1/ptm/m/n/11 Angiosperms|  
  []
 
-<input/phylopics/converted/tocoyena.png, id=145, 110.4125pt x 57.21375pt>
-File: input/phylopics/converted/tocoyena.png Graphic file (type png)
-<use input/phylopics/converted/tocoyena.png>
-Package pdftex.def Info: input/phylopics/converted/tocoyena.png  used on input 
-line 298.
-(pdftex.def)             Requested size: 110.41222pt x 57.2136pt.
+<input/phylopics/converted/lepismium.png, id=162, 47.17625pt x 57.21375pt>
+File: input/phylopics/converted/lepismium.png Graphic file (type png)
+<use input/phylopics/converted/lepismium.png>
+Package pdftex.def Info: input/phylopics/converted/lepismium.png  used on input
+ line 298.
+(pdftex.def)             Requested size: 47.17612pt x 57.2136pt.
 
 Overfull \hbox (1.75688pt too wide) in paragraph at lines 298--298
 []|\OT1/ptm/m/n/11 Angiosperms|  
  []
 
+<input/phylopics/converted/oocephalus.png, id=163, 75.6426pt x 56.8524pt>
+File: input/phylopics/converted/oocephalus.png Graphic file (type png)
+<use input/phylopics/converted/oocephalus.png>
+Package pdftex.def Info: input/phylopics/converted/oocephalus.png  used on inpu
+t line 299.
+(pdftex.def)             Requested size: 75.6424pt x 56.85225pt.
 
-Overfull \hbox (10.30728pt too wide) in paragraph at lines 272--301
+Overfull \hbox (1.75688pt too wide) in paragraph at lines 299--299
+[]|\OT1/ptm/m/n/11 Angiosperms|  
+ []
+
+<input/phylopics/converted/pilosocereus.png, id=164, 47.17625pt x 57.21375pt>
+File: input/phylopics/converted/pilosocereus.png Graphic file (type png)
+<use input/phylopics/converted/pilosocereus.png>
+Package pdftex.def Info: input/phylopics/converted/pilosocereus.png  used on in
+put line 300.
+(pdftex.def)             Requested size: 47.17612pt x 57.2136pt.
+
+Overfull \hbox (1.75688pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/m/n/11 Angiosperms|  
+ []
+
+<input/phylopics/converted/prosthechea.png, id=165, 53.19875pt x 57.21375pt>
+File: input/phylopics/converted/prosthechea.png Graphic file (type png)
+<use input/phylopics/converted/prosthechea.png>
+Package pdftex.def Info: input/phylopics/converted/prosthechea.png  used on inp
+ut line 302.
+(pdftex.def)             Requested size: 53.19861pt x 57.2136pt.
+
+Overfull \hbox (1.75688pt too wide) in paragraph at lines 302--302
+[]|\OT1/ptm/m/n/11 Angiosperms|  
+ []
+
+<input/phylopics/converted/tillandsia.png, id=166, 57.21375pt x 57.21375pt>
+File: input/phylopics/converted/tillandsia.png Graphic file (type png)
+<use input/phylopics/converted/tillandsia.png>
+Package pdftex.def Info: input/phylopics/converted/tillandsia.png  used on inpu
+t line 303.
+(pdftex.def)             Requested size: 57.2136pt x 57.2136pt.
+
+Overfull \hbox (1.75688pt too wide) in paragraph at lines 303--303
+[]|\OT1/ptm/m/n/11 Angiosperms|  
+ []
+
+<input/phylopics/converted/tocoyena.png, id=167, 110.4125pt x 57.21375pt>
+File: input/phylopics/converted/tocoyena.png Graphic file (type png)
+<use input/phylopics/converted/tocoyena.png>
+Package pdftex.def Info: input/phylopics/converted/tocoyena.png  used on input 
+line 304.
+(pdftex.def)             Requested size: 110.41222pt x 57.2136pt.
+
+Overfull \hbox (1.75688pt too wide) in paragraph at lines 304--304
+[]|\OT1/ptm/m/n/11 Angiosperms|  
+ []
+
+
+Overfull \hbox (10.30728pt too wide) in paragraph at lines 278--307
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 308.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 314.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6] [7 <./input/phylopics/converted/diogenidae.png> <./input/phylopics/converte
-d/entomobryidae.png> <./input/phylopics/converted/neanuridae.png> <./input/phyl
-opics/converted/tityus.png> <./input/phylopics/converted/arhynchobatidae.png> <
-./input/phylopics/converted/dipsadidae.png> <./input/phylopics/converted/hareng
-ula.png> <./input/phylopics/converted/thozetella.png> <./input/phylopics/conver
-ted/conchocarpus.png> <./input/phylopics/converted/gaylussacia.png> <./input/ph
-ylopics/converted/harpalyce.png> <./input/phylopics/converted/iridaceae.png> <.
-/input/phylopics/converted/lepismium.png> <./input/phylopics/converted/oocephal
-us.png> <./input/phylopics/converted/pilosocereus.png> <./input/phylopics/conve
-rted/prosthechea.png> <./input/phylopics/converted/tillandsia.png> <./input/phy
-lopics/converted/tocoyena.png>] [8]
+[9 <./input/phylopics/converted/diogenidae.png> <./input/phylopics/converted/en
+tomobryidae.png> <./input/phylopics/converted/neanuridae.png> <./input/phylopic
+s/converted/tityus.png> <./input/phylopics/converted/arhynchobatidae.png> <./in
+put/phylopics/converted/dipsadidae.png> <./input/phylopics/converted/harengula.
+png> <./input/phylopics/converted/thozetella.png> <./input/phylopics/converted/
+conchocarpus.png> <./input/phylopics/converted/gaylussacia.png> <./input/phylop
+ics/converted/harpalyce.png> <./input/phylopics/converted/iridaceae.png> <./inp
+ut/phylopics/converted/lepismium.png> <./input/phylopics/converted/oocephalus.p
+ng> <./input/phylopics/converted/pilosocereus.png> <./input/phylopics/converted
+/prosthechea.png> <./input/phylopics/converted/tillandsia.png> <./input/phylopi
+cs/converted/tocoyena.png>] [10]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 336.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 342.
 
-Overfull \hbox (0.52309pt too wide) in paragraph at lines 340--340
+Overfull \hbox (0.52309pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Fraction
  []
 
 
-Overfull \hbox (0.52309pt too wide) in paragraph at lines 340--340
+Overfull \hbox (0.52309pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Fraction
  []
 
 
-Overfull \hbox (0.52309pt too wide) in paragraph at lines 340--340
+Overfull \hbox (0.52309pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Fraction
  []
 
 
-Overfull \hbox (6.87015pt too wide) in paragraph at lines 340--340
+Overfull \hbox (6.87015pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Biodiversity
  []
 
 
-Overfull \hbox (1.39331pt too wide) in paragraph at lines 340--340
+Overfull \hbox (1.39331pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Sea/land
  []
 
 
-Overfull \hbox (2.23299pt too wide) in paragraph at lines 340--340
+Overfull \hbox (2.23299pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Duplicates
  []
 
 
-Overfull \hbox (0.53073pt too wide) in paragraph at lines 340--340
+Overfull \hbox (0.53073pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Political
  []
 
 
-Overfull \hbox (7.06151pt too wide) in paragraph at lines 340--340
+Overfull \hbox (7.06151pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Collection
  []
 
 
-Overfull \hbox (9.2333pt too wide) in paragraph at lines 340--340
+Overfull \hbox (9.2333pt too wide) in paragraph at lines 346--346
  []|\OT1/ptm/m/n/8 (-20) Coordinate
  []
 
 
-Overfull \hbox (6.42262pt too wide) in paragraph at lines 340--341
+Overfull \hbox (6.42262pt too wide) in paragraph at lines 346--347
  []|\OT1/ptm/m/n/8 (-20) Individual
  []
 
 
-Overfull \hbox (26.45244pt too wide) in paragraph at lines 336--369
+Overfull \hbox (26.45244pt too wide) in paragraph at lines 342--375
  [][] 
  []
 
-[9]
-Overfull \hbox (0.90257pt too wide) in paragraph at lines 381--381
+[11]
+Overfull \hbox (0.90257pt too wide) in paragraph at lines 387--387
  []|\OT1/ptm/m/n/9 (-20) Evaluated
  []
 
 
-Overfull \hbox (5.52875pt too wide) in paragraph at lines 381--381
+Overfull \hbox (5.52875pt too wide) in paragraph at lines 387--387
  []|\OT1/ptm/m/n/9 (-20) Threatened
  []
 
 
-Overfull \hbox (5.52875pt too wide) in paragraph at lines 381--381
+Overfull \hbox (5.52875pt too wide) in paragraph at lines 387--387
  []|\OT1/ptm/m/n/9 (-20) Threatened
  []
 
 
-Overfull \hbox (5.52875pt too wide) in paragraph at lines 381--381
+Overfull \hbox (5.52875pt too wide) in paragraph at lines 387--387
  []|\OT1/ptm/m/n/9 (-20) Threatened
  []
 
-[10]
-<./figures_tables/Figure_study_groups_reduced.jpg, id=198, 462.528pt x 583.7007
-pt>
-File: ./figures_tables/Figure_study_groups_reduced.jpg Graphic file (type jpg)
-<use ./figures_tables/Figure_study_groups_reduced.jpg>
-Package pdftex.def Info: ./figures_tables/Figure_study_groups_reduced.jpg  used
- on input line 407.
-(pdftex.def)             Requested size: 424.82523pt x 536.14723pt.
-<./output/figure_number_of_records.jpg, id=199, 578.16pt x 578.16pt>
-File: ./output/figure_number_of_records.jpg Graphic file (type jpg)
-<use ./output/figure_number_of_records.jpg>
-Package pdftex.def Info: ./output/figure_number_of_records.jpg  used on input l
-ine 411.
+[12]
+<./figures_tables/Fig1_study_groups.png, id=209, 576.2328pt x 727.2771pt>
+File: ./figures_tables/Fig1_study_groups.png Graphic file (type png)
+<use ./figures_tables/Fig1_study_groups.png>
+Package pdftex.def Info: ./figures_tables/Fig1_study_groups.png  used on input 
+line 413.
+(pdftex.def)             Requested size: 424.82523pt x 536.19022pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13
+
+
+
+
+]
+Overfull \vbox (7.68404pt too high) has occurred while \output is active []
+
+[14 <./figures_tables/Fig1_study_groups.png>]
+<./figures_tables/Fig2_number_of_records.png, id=223, 578.16pt x 578.16pt>
+File: ./figures_tables/Fig2_number_of_records.png Graphic file (type png)
+<use ./figures_tables/Fig2_number_of_records.png>
+Package pdftex.def Info: ./figures_tables/Fig2_number_of_records.png  used on i
+nput line 417.
 (pdftex.def)             Requested size: 472.03123pt x 472.02992pt.
-<./output/figure_number_of_records_split.jpg, id=200, 1156.32pt x 1445.4pt>
-File: ./output/figure_number_of_records_split.jpg Graphic file (type jpg)
-<use ./output/figure_number_of_records_split.jpg>
-Package pdftex.def Info: ./output/figure_number_of_records_split.jpg  used on i
-nput line 415.
+<./figures_tables/Fig3_number_of_records_split.pdf, id=224, 1156.32pt x 1445.4p
+t>
+File: ./figures_tables/Fig3_number_of_records_split.pdf Graphic file (type pdf)
+
+<use ./figures_tables/Fig3_number_of_records_split.pdf>
+Package pdftex.def Info: ./figures_tables/Fig3_number_of_records_split.pdf  use
+d on input line 421.
 (pdftex.def)             Requested size: 472.03123pt x 590.03741pt.
-<./figures_tables/figure_number_species_richness_difference.pdf, id=201, 578.16
-pt x 722.7pt>
-File: ./figures_tables/figure_number_species_richness_difference.pdf Graphic fi
-le (type pdf)
-<use ./figures_tables/figure_number_species_richness_difference.pdf>
-Package pdftex.def Info: ./figures_tables/figure_number_species_richness_differ
-ence.pdf  used on input line 419.
-(pdftex.def)             Requested size: 472.03123pt x 590.0374pt.
-[11
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[15 <./figures_tables/Fig2_number_of_records.png (PNG copy)>]
+<./figures_tables/Fig4_number_species_richness_difference.pdf, id=230, 578.16pt
+ x 643.7149pt>
+File: ./figures_tables/Fig4_number_species_richness_difference.pdf Graphic file
+ (type pdf)
+<use ./figures_tables/Fig4_number_species_richness_difference.pdf>
+Package pdftex.def Info: ./figures_tables/Fig4_number_species_richness_differen
+ce.pdf  used on input line 425.
+(pdftex.def)             Requested size: 472.03123pt x 525.55121pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [12 <./figures_tables/Figure_study_groups_reduced.jpg>] [13 <./output/figure_
-number_of_records.jpg>] [14 <./output/figure_number_of_records_split.jpg>] [15 
-<./figures_tables/figure_number_species_richness_difference.pdf>] [16] [17] 
+[16 <./figures_tables/Fig3_number_of_records_split.pdf>] [17 <./figures_tables/
+Fig4_number_species_richness_difference.pdf>] [18] [19] 
 AED: lastpage setting LastPage
-[18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
+[20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 584.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
 (manuscript_peerj.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 584.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 584.
 Package rerunfilecheck Info: File `manuscript_peerj.out' has not changed.
 (rerunfilecheck)             Checksum: 52CB81A7C57F056EAE1D4A565B9FF69E;2841.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 578.
+Package logreq Info: Writing requests to 'manuscript_peerj.run.xml'.
+\openout1 = `manuscript_peerj.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 27048 strings out of 492970
- 452828 string characters out of 3125262
- 681845 words of memory out of 3000000
- 30198 multiletter control sequences out of 15000+200000
- 610209 words of font info for 328 fonts, out of 3000000 for 9000
+ 33341 strings out of 492970
+ 573269 string characters out of 3125262
+ 1152052 words of memory out of 3000000
+ 36424 multiletter control sequences out of 15000+200000
+ 610410 words of font info for 330 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,20n,77p,1929b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,77p,1929b,1645s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/az64mycy/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
 enc}<C:/Users/az64mycy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/az64mycy/AppData/Local/Programs/MiKTeX 2.9/fonts/
@@ -1527,9 +1817,9 @@ mycy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Use
 rs/az64mycy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
 <C:/Users/az64mycy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on manuscript_peerj.pdf (18 pages, 9733349 bytes).
+Output written on manuscript_peerj.pdf (20 pages, 23116595 bytes).
 PDF statistics:
- 2370 PDF objects out of 2487 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
+ 2421 PDF objects out of 2487 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
  59647 words of extra memory for PDF output out of 61914 (max. 10000000)
 

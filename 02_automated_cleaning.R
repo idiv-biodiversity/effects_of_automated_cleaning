@@ -15,16 +15,29 @@ for(i in 1:length(li)){
   sub <- read_delim(paste("input/gbif/", li[i], "/occurrence.txt", sep = ""), delim = "\t", quote = "") %>% 
     mutate_all(as.character)
   if(nrow(sub) > 0){
+    quant <- bind_rows(quant, sub[,c("organismQuantity", "organismQuantityType", "occurrenceStatus" )])
     sub$taxon <- str_split(li[i], pattern = "_")[[1]][1]
     sub <- dplyr::select(sub, taxon, decimalLongitude, decimalLatitude,
                   coordinateUncertaintyInMeters, 
                   countryCode, gbifID, species, class, family, genus, taxonRank,
-                  year, basisOfRecord, individualCount)
+                  year, basisOfRecord, individualCount, organismQuantity, organismQuantityType, occurrenceStatus, hasGeospatialIssues)
     dat <- bind_rows(dat,sub)
+    
   }
 }
 
+# get the number of records with the columns needed to disambiguate the IndividualCount = 0 issue
+sum(!is.na(dat$organismQuantity)) / nrow(dat)
+sum(!is.na(dat$organismQuantityType)) / nrow(dat)
+sum(!is.na(dat$occurrenceStatus)) / nrow(dat)
 
+test <- dat %>% filter((individualCount == 0))
+sum(!is.na(test$organismQuantity)) / nrow(test)
+sum(!is.na(test$organismQuantityType)) / nrow(test)
+sum(!is.na(test$occurrenceStatus)) / nrow(test)
+
+dat <- dat %>% 
+  select(-organismQuantity, -organismQuantityType, -occurrenceStatus, -hasGeospatialIssues)
 
 # meta data filtering
 dat <- dat %>% 

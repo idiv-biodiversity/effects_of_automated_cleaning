@@ -65,18 +65,28 @@ world.countries <- rnaturalearth::ne_countries(type = 'countries',
                                                scale = 110)
 countries.behr <- spTransform(world.countries, CRS(behr)) %>% fortify()
 
-# plot
+# Axis labels
+
+ticks_x <- SpatialPoints(data.frame(c(-120,-100,-80, -60, -40, -20),0), proj4string = CRS(wgs1984))
+ticks_x <-  data.frame(x = coordinates(spTransform(ticks_x, behr))[,1],
+                       long = c(-120,-100,-80, -60, -40, -20))
+
+
+ticks_y <- SpatialPoints(data.frame(0, c(40, 20, 0, -20, -40, -60)), proj4string = CRS(wgs1984))
+ticks_y <-  data.frame(y = coordinates(spTransform(ticks_y, behr))[,2],
+                       long = c(40, 20, 0, -20, -40, -60))# plot
+
 ggplot()+
   geom_polygon(data = countries.behr,
                aes(x = long, y = lat, group = group), 
                fill = "transparent", 
                color = "grey20")+
   geom_tile(data = plo, aes(x = x, y = y, fill = log(layer)), alpha = 0.8)+
-  scale_fill_viridis(name = "Number of\nrecords", direction = -1, na.value = "transparent",
+  scale_fill_viridis(name = "Absolute number\nof flagged records", direction = -1, na.value = "transparent",
                      breaks = c(log(1), log(10), log(100), log(1000), log(5000)),
                      labels = c(1,10,100,1000,5000))+
-  xlim(-12000000, -3000000)+
-  ylim(-6500000, 4500000)+
+  scale_x_continuous(breaks = ticks_x[,1], labels = ticks_x[,2], limits = c(-12000000, -3000000))+
+  scale_y_continuous(breaks = ticks_y[,1], labels = ticks_y[,2], limits = c(-6500000, 4500000))+
   coord_fixed()+
   theme_bw()+
   theme(legend.position = "bottom",
@@ -84,7 +94,7 @@ ggplot()+
         axis.title = element_blank())#+
   # facet_wrap(.~ dataset, ncol = 2)
 
-ggsave("output/figure_number_of_records.jpg", height = 8, width=8)
+ggsave("output/figure_number_of_records.png", height = 8, width=8)
 
 # Figure 2
 plo <- dat %>% 
@@ -158,7 +168,7 @@ ggplot()+
                fill = "transparent", 
                color = "grey50")+
   geom_tile(data = plo, aes(x = x, y = y, fill = log(layer)), alpha = 1)+
-  scale_fill_viridis(name = "Number of\nrecords", direction = -1, na.value = "transparent",
+  scale_fill_viridis(name = "Absolute number\nof flagged records", direction = -1, na.value = "transparent",
                      breaks = c(log(1), log(10), log(100), log(1000), log(5000)),
                      labels = c(1,10,100,1000,5000))+
   xlim(-12000000, -3000000)+
@@ -176,4 +186,4 @@ ggplot()+
         text = element_text(size=25))+
   facet_wrap(.~ test)
 
-ggsave("output/figure_number_of_records_split.jpg", height = 20, width=16)
+ggsave("output/figure_number_of_records_split.pdf", height = 20, width=16)
