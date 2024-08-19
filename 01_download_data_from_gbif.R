@@ -72,9 +72,9 @@ for(i in 1:length(taxon)){
                  "hasCoordinate = TRUE",
                  "decimalLatitude <= 35",
                  "decimalLongitude <= -33",
-                 pwd = 'onkeldagobert19',
-                 user= "azizka",
-                 email = 'zizka.alexander@gmail.com')
+                 pwd = "YOURPW",
+                 user= "YOURUSERNAME",
+                 email = 'YOUREMAIL')
     Sys.sleep(time = 60)
   }else{
     print(paste(taxon[i], " - no records found"))
